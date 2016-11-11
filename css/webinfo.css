@@ -1,0 +1,579 @@
+@charset "utf-8";
+
+/*CSS document*/
+
+
+/*
+===========
+网站相关信息
+===========
+*/
+
+.webinfo {
+  padding: 40px 0;
+}
+
+.webinfo .content .left {
+  float: left;
+  width: 198px;
+  max-height: 400px;
+  background-color: #fff;
+  border: 1px solid #e3e3e3;
+  overflow: auto;
+}
+
+.webinfo .content .left ul li {
+  padding: 0 10px;
+  height: 36px;
+  color: #333;
+  line-height: 36px;
+  cursor: pointer;
+}
+
+.webinfo .content .left ul li a {
+  display: inline-block;
+  width: 170px;
+  color: #333;
+}
+
+.webinfo .content .left ul li i {
+  float: right;
+  width: 6px;
+  height: 36px;
+  background: url(../img/onlinetest/knowledgepoint-list-icon.png) right top no-repeat;
+}
+
+.webinfo .content .left ul li+li {
+  border-top: 1px solid #e3e3e3;
+}
+
+.webinfo .content .left ul li:hover {
+  background-color: #eee;
+}
+
+.webinfo .content .left ul li.active {
+  background-color: #ff9000;
+}
+
+.webinfo .content .left ul li.active a {
+  color: #fff;
+}
+
+.webinfo .content .left ul li.active i {
+  background: url(../img/onlinetest/knowledgepoint-list-icon.png) left top no-repeat;
+}
+
+.webinfo .content .right {
+  float: right;
+  width: 768px;
+  padding: 10px 10px 50px;
+  background-color: #fff;
+  border: 1px solid #e3e3e3;
+  overflow: hidden;
+}
+
+.webinfo .content .right .heading {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+  border-bottom: 1px dashed #e3e3e3;
+  font: 16px/30px "Microsoft Yahei";
+  color: #333;
+}
+
+.webinfo .content .right .main {
+  width: 100%;
+  height: auto;
+  padding-bottom: 40px;
+}
+
+.webinfo .content .right .main p {
+  line-height: 2;
+  font-size: 14px;
+  text-align: justify;
+}
+
+
+/*
+===========
+首页产品特色
+===========
+*/
+
+.featurebox .item {
+  width: 100%;
+  height: 300px;
+  padding: 100px 0;
+  background-color: #fff;
+}
+
+.featurebox .item .left {
+  float: left;
+}
+
+.featurebox .item .right {
+  float: right;
+}
+
+.featurebox .item p {
+  width: 280px;
+  font: 18px/2 Arial, "Microsoft Yahei";
+  color: #333;
+}
+
+.featurebox .item p.num {
+  width: 40px;
+  height: 5px;
+  margin-bottom: 20px;
+  background-color: #ff9000;
+}
+
+.featurebox .item p.title {
+  font: 700 28px/2 Arial, "Microsoft Yahei";
+  color: #1887e3;
+}
+
+.featurebox .item.grey {
+  background-color: #eee;
+}
+
+
+/*
+===========
+免费请家教
+===========
+*/
+
+.freetutorMain {
+  padding: 40px 0;
+}
+
+.freetutorMain .info {
+  float: left;
+  width: 700px;
+  height: 500px;
+}
+
+.freetutorMain .info h4 {
+  height: 36px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #e3e3e3;
+  font: bold 18px/28px "Microsoft Yahei";
+  color: #1887e3;
+}
+
+.freetutorMain .info table {
+  width: 700px;
+  margin-bottom: 20px;
+}
+
+.freetutorMain .info table td {
+  height: 60px;
+}
+
+.freetutorMain .info table td i {
+  margin: 0 5px;
+  color: red;
+}
+
+.freetutorMain .info table td.validateinfo em {
+  margin-left: 20px;
+  color: red;
+}
+
+.freetutorMain .info table td input[type="text"] {
+  padding: 0 10px;
+  width: 220px;
+  height: 40px;
+  border: 1px solid #c6c7c9;
+}
+
+.freetutorMain .info table td input.type4 {
+  padding: 0 10px;
+  width: 120px;
+  height: 40px;
+  background-color: #ff9000;
+  font-size: 14px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.freetutorMain .info table td input.type4:hover {
+  border: 1px solid #d47903;
+}
+
+.freetutorMain .info table td input.type1 {
+  width: 570px;
+}
+
+.freetutorMain .info table td input.type2 {
+  width: 320px;
+}
+
+.freetutorMain .info table td.lfont {
+  font: 16px/40px Arial, "Microsoft Yahei";
+  color: #333;
+  text-align: right;
+}
+
+.freetutorMain .info table td.upload {
+  position: relative;
+}
+
+.freetutorMain .info table td.upload input {
+  position: relative;
+  width: 120px;
+  height: 40px;
+  opacity: 0;
+}
+
+.freetutorMain .info table td.upload label {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  display: inline-block;
+  width: 120px;
+  height: 40px;
+  background-color: #1887e3;
+  line-height: 40px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  /*opacity: 0;*/
+}
+
+.freetutorMain .show {
+  float: right;
+  width: 280px;
+  height: 500px;
+}
+
+.freetutorMain .show .heading {
+  padding: 0 20px;
+  height: 40px;
+  border-bottom: 1px solid #e3e3e3;
+  background-color: #ff9000;
+  font: 16px/40px "Microsoft Yahei";
+  color: #fff;
+}
+
+.freetutorMain .show .content {
+  position: relative;
+  height: 418px;
+  padding: 20px;
+  border: 1px solid #e3e3e3;
+  border-top: none;
+  overflow: hidden;
+}
+
+.freetutorMain .show .content ul {
+  position: absolute;
+  height: 418px;
+  overflow: hidden;
+}
+
+.freetutorMain .show .content ul li {
+  /*height: 90px;*/
+  padding: 10px 0 20px;
+  border-bottom: 1px dashed #e3e3e3;
+}
+
+.freetutorMain .show .content ul li p {
+  width: 238px;
+  /*height: 36px;*/
+  line-height: 1.5;
+  font-size: 12px;
+}
+
+.freetutorMain .show .content ul li p.sname {
+  height: 24px;
+  line-height: 2;
+  font-weight: 700;
+}
+
+.freetutorMain .show .content ul li p.sname .yes {
+  float: right;
+  color: green;
+  font-weight: normal;
+}
+
+.freetutorMain .show .content ul li p.sname .no {
+  float: right;
+  color: red;
+  font-weight: normal;
+}
+
+
+/*
+===========
+名师与机构
+===========
+*/
+
+.famousmain {
+  padding: 40px 0;
+}
+
+
+/*tab列表*/
+
+.famousmain .tab-menu {
+  border-bottom: 2px solid #ff9000;
+}
+
+.famousmain .tab-menu a {
+  display: inline-block;
+  width: 50%;
+  height: 50px;
+  background-color: #ddd;
+  font: 22px/50px "Microsoft Yahei";
+  color: #fff;
+  text-align: center;
+}
+
+.famousmain .tab-menu a.active {
+  background-color: #ff9000;
+}
+
+.famousmain .tab-menu a.menu1 {
+  float: left;
+}
+
+.famousmain .tab-menu a.menu2 {
+  float: left;
+}
+
+.famousmain .content {
+  padding: 20px 10px;
+  margin-bottom: 40px;
+  width: 978px;
+  border: 1px solid #e3e3e3;
+  border-top: none;
+}
+
+.famousmain .content .item {
+  padding: 20px;
+  margin-bottom: 10px;
+  border: 1px solid #e3e3e3;
+}
+
+.famousmain .content .item:hover {
+  border-color: #ff9000;
+}
+
+.famousmain .content .item .left {
+  float: left;
+}
+
+.famousmain .content .item .right {
+  float: right;
+  width: 760px;
+}
+
+.famousmain .content .item .right p {
+  line-height: 2;
+}
+
+.famousmain .content .item .right p.tname {
+  border-bottom: 1px dashed #e3e3e3;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 34px;
+}
+
+
+/*分页*/
+
+.bottompage {
+  margin: 40px 0 60px;
+}
+
+.bottompage ul {
+  margin-left: 50%;
+  transform: translateX(-50%);
+  width: 320px;
+}
+
+.bottompage ul li {
+  float: left;
+  padding: 10px;
+  background-color: #e3e3e3;
+  cursor: pointer;
+}
+
+.bottompage ul li+li {
+  margin-left: 10px;
+}
+
+.bottompage ul li.active {
+  background-color: #ff9000;
+  color: #fff;
+}
+
+
+/*新增产品介绍页*/
+
+.subpage-bg-1 {
+  width: 100%;
+  height: 255px;
+}
+
+.subpage-bg-mfqjq {
+  background: url(../img/subpage-bg-freetutor.jpg) center center no-repeat;
+}
+
+.subpage-bg-zskc {
+  background: url(../img/subpage-bg-zskc.jpg) center center no-repeat;
+}
+
+.subpage-bg-zxtk {
+  background: url(../img/subpage-bg-zxtk.jpg) center center no-repeat;
+}
+
+.subpage-bg-1 .provide .textInfo {
+  margin: 30px 0 0 30px;
+}
+
+.subpage-bg-1 .provide .textInfo h2 {
+  font-size: 24px;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.subpage-bg-1 .provide .textInfo p {
+  font-size: 16px;
+  color: #000;
+  line-height: 1.5;
+}
+
+.subpage-bg-1 .provide .textInfo a {
+  display: inline-block;
+  width: 100px;
+  height: 36px;
+  background-color: #ff9000;
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  line-height: 36px;
+  border-radius: 3px;
+  margin-top: 30px;
+}
+
+.subpage-bg-1 .provide .textInfo a:hover {
+  background-color: #ec8500;
+}
+
+.default-grey {
+  background-color: #999 !important;
+  cursor: default !important;
+}
+
+
+/*新增免费请家教介绍页*/
+
+.featurebox-new .item {
+  width: 100%;
+  padding: 50px 0;
+  background-color: #fff;
+}
+
+.featurebox-new .item .title {
+  font: 500 30px/2 Arial, "Microsoft Yahei";
+  color: #000;
+  text-align: center;
+}
+
+.featurebox-new .item ul li {
+  width: 1000px;
+}
+
+.featurebox-new .item ul.detail span {
+  display: inline-block;
+}
+
+.featurebox-new .item ul.detail .left {
+  float: left;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+}
+
+.featurebox-new .item ul.detail .right {
+  float: right;
+  width: 800px;
+  height: 200px;
+}
+
+.featurebox-new .item ul.detail .left .icon {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  margin-top: 25px;
+  background: #1887e3 url(../img/newFeature-icon.png) no-repeat;
+  border-radius: 50%;
+}
+
+.featurebox-new .item ul.detail .left .mfqjq-1 {
+  background-position: 0 0;
+}
+
+.featurebox-new .item ul.detail .left .mfqjq-2 {
+  background-position: 0 -150px;
+}
+
+.featurebox-new .item ul.detail .left .mfqjq-3 {
+  background-position: 0 -300px;
+}
+
+.featurebox-new .item ul.detail .left .mfqjq-4 {
+  background-position: 0 -450px;
+}
+
+.featurebox-new .item ul.detail .left .zxtk-1 {
+  background-position: -300px 0;
+}
+
+.featurebox-new .item ul.detail .left .zxtk-2 {
+  background-position: -300px -150px;
+}
+
+.featurebox-new .item ul.detail .left .zxtk-3 {
+  background-position: -300px -300px;
+}
+
+.featurebox-new .item ul.detail .left .zxtk-4 {
+  background-position: -300px -450px;
+}
+
+.featurebox-new .item ul.detail .right .r-title {
+  margin-top: 45px;
+  font-size: 24px;
+  line-height: 2;
+  color: #444;
+}
+
+.featurebox-new .item ul.detail .right .r-info {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666;
+}
+
+.featurebox-new .newFeatureBtn {
+  margin: 20px 0 60px;
+  text-align: center;
+}
+
+.featurebox-new .style {
+  display: inline-block;
+  padding: 15px 30px;
+  margin: 0 15px;
+  background-color: #ff9000;
+  border-radius: 3px;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.featurebox-new .style:hover {
+  background-color: #ec8500;
+}

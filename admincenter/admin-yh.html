@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>59学习网--后台管理</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" type="text/css" href="../css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/admincenter.css">
+</head>
+
+<body>
+  <div class="admincenter">
+    <!--左边栏-->
+    <div class="side">
+      <div class="logo">
+        <a href="../index.html" target="_blank">
+          <img src="img/usercenter-logo.jpg" alt="59个性化学习网，www.59xuexi.com">
+        </a>
+      </div>
+      <div class="menu">
+        <div class="user">
+          <img src="img/headpic.png" alt="用户头像">
+          <p>admin</p>
+        </div>
+        <ul class="nav" id="nav">
+          <!--学生列表-->
+          <li class="myzy"><a href="admincenter.html">管理员管理</a></li>
+          <li class="myzy active"><a href="admin-yh.html">用户管理</a></li>
+          <li class="myct"><a href="admin-st.html">试题管理</a></li>
+          <li class="myct"><a href="admin-sj.html">试卷管理</a></li>
+          <li class="mylx"><a href="admin-stlx.html">试题类型管理</a></li>
+          <li class="mylx"><a href="admin-sjlx.html">试卷类型管理</a></li>
+          <li class="mydd"><a href="admin-kmlb.html">科目类别管理</a></li>
+          <li class="mydd"><a href="admin-zsd.html">知识点管理</a></li>
+          <li class="myqjj"><a href="admin-xq.html">需求管理</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!--主要内容-->
+    <div class="main clearfix">
+      <!--头部-->
+      <div class="heading clearfix">
+        <span id="pullleft"><img src="img/pullleft-icon.png" alt="点击收起左栏"></span>
+        <i>后台管理系统</i>
+        <ul>
+          <li class="wHome"><a href="../index.html" target="_blank">网站首页</a></li>
+          <li class="wHome"><a href="admincenter.html">后台首页</a></li>
+          <li class="wOut"><a href="">退出</a></li>
+        </ul>
+      </div>
+      <!--主体-->
+      <div class="content">
+        <div class="crumbs">
+          <a href="usercenter.html">管理员中心</a><i>>></i><a href="###">用户管理</a>
+          <div class="messages">
+            <p><a href="admin-xq.html" class="messagelink">您有<span>50</span>条需求未处理，点击查看</a></p>
+          </div>
+        </div>
+        <div class="type">
+          <h4>用户管理</h4>
+          <div class="infolist admin-yhgl">
+            <div class="status status-left labelselect">
+              <input type="button" value="学生用户列表" name="studentlist" class="active">
+              <input type="button" value="老师用户列表" name="teacherlist">
+            </div>
+            <div class="status status-right">
+              <input type="button" value="删除选中项" class="deleteAdmin">
+            </div>
+            <!--学生用户列表-->
+            <table cellspacing="0" cellpadding="0" border="0" id="studentlist">
+              <tbody>
+                <tr class="title">
+                  <th class="w10"></th>
+                  <th class="w10">用户ID</th>
+                  <th class="w10">身份</th>
+                  <th class="w10">用户昵称</th>
+                  <th class="w10">真实姓名</th>
+                  <th class="w10">电话号码</th>
+                  <th class="w15">地区</th>
+                  <th class="w25">学校</th>
+                </tr>
+                <tr>
+                  <td class="w10 admincenter-dx">
+                    <input type="checkbox" name="admincenter" id="admincenter-s1">
+                    <label for="admincenter-s1"></label>
+                  </td>
+                  <td class="w10 userInfo">12323536124</td>
+                  <td class="w10">学生</td>
+                  <td class="w10">hello</td>
+                  <td class="w10">欧阳锋</td>
+                  <td class="w10">13900001111</td>
+                  <td class="w15">上海浦东</td>
+                  <td class="w25">复旦大学附属第一中学</td>
+                </tr>
+                <tr>
+                  <td class="w10 admincenter-dx">
+                    <input type="checkbox" name="admincenter" id="admincenter-s2">
+                    <label for="admincenter-s2"></label>
+                  </td>
+                  <td class="w10">12323536124</td>
+                  <td class="w10">学生</td>
+                  <td class="w10">hello</td>
+                  <td class="w10">欧阳锋</td>
+                  <td class="w10">13900001111</td>
+                  <td class="w15">上海浦东</td>
+                  <td class="w25">复旦大学附属第一中学</td>
+                </tr>
+                <tr>
+                  <td class="w10 admincenter-dx">
+                    <input type="checkbox" name="admincenter" id="admincenter-s3">
+                    <label for="admincenter-s3"></label>
+                  </td>
+                  <td class="w10">12323536124</td>
+                  <td class="w10">学生</td>
+                  <td class="w10">hello</td>
+                  <td class="w10">欧阳锋</td>
+                  <td class="w10">13900001111</td>
+                  <td class="w15">上海浦东</td>
+                  <td class="w25">复旦大学附属第一中学</td>
+                </tr>
+                <tr>
+                  <td class="w10 admincenter-dx">
+                    <input type="checkbox" name="admincenter" id="admincenter-s4">
+                    <label for="admincenter-s4"></label>
+                  </td>
+                  <td class="w10">12323536124</td>
+                  <td class="w10">学生</td>
+                  <td class="w10">hello</td>
+                  <td class="w10">欧阳锋</td>
+                  <td class="w10">13900001111</td>
+                  <td class="w15">上海浦东</td>
+                  <td class="w25">复旦大学附属第一中学</td>
+                </tr>
+                <tr>
+                  <td class="w10 admincenter-dx">
+                    <input type="checkbox" name="admincenter" id="admincenter-s5">
+                    <label for="admincenter-s5"></label>
+                  </td>
+                  <td class="w10">12323536124</td>
+                  <td class="w10">学生</td>
+                  <td class="w10">hello</td>
+                  <td class="w10">欧阳锋</td>
+                  <td class="w10">13900001111</td>
+                  <td class="w15">上海浦东</td>
+                  <td class="w25">复旦大学附属第一中学</td>
+                </tr>
+              </tbody>
+            </table>
+            <!--老师用户列表-->
+            <table cellspacing="0" cellpadding="0" border="0" id="teacherlist">
+              <tbody>
+                <tr class="title">
+                  <th class="w10"></th>
+                  <th class="w10">用户ID</th>
+                  <th class="w10">身份</th>
+                  <th class="w10">用户昵称</th>
+                  <th class="w10">真实姓名</th>
+                  <th class="w10">电话号码</th>
+                  <th class="w15">地区</th>
+                  <th class="w25">学校</th>
+                </tr>
+                <tr>
+                  <td class="w10 admincenter-dx">
+                    <input type="checkbox" name="admincenter" id="admincenter-t1">
+                    <label for="admincenter-t1"></label>
+                  </td>
+                  <td class="w10">12323536124</td>
+                  <td class="w10">老师</td>
+                  <td class="w10">hello</td>
+                  <td class="w10">欧阳锋</td>
+                  <td class="w10">13900001111</td>
+                  <td class="w15">上海浦东</td>
+                  <td class="w25">复旦大学附属第一中学</td>
+                </tr>
+                <tr>
+                  <td class="w10 admincenter-dx">
+                    <input type="checkbox" name="admincenter" id="admincenter-t2">
+                    <label for="admincenter-t2"></label>
+                  </td>
+                  <td class="w10">12323536124</td>
+                  <td class="w10">老师</td>
+                  <td class="w10">hello</td>
+                  <td class="w10">欧阳锋</td>
+                  <td class="w10">13900001111</td>
+                  <td class="w15">上海浦东</td>
+                  <td class="w25">复旦大学附属第一中学</td>
+                </tr>
+                <tr>
+                  <td class="w10 admincenter-dx">
+                    <input type="checkbox" name="admincenter" id="admincenter-t3">
+                    <label for="admincenter-t3"></label>
+                  </td>
+                  <td class="w10">12323536124</td>
+                  <td class="w10">老师</td>
+                  <td class="w10">hello</td>
+                  <td class="w10">欧阳锋</td>
+                  <td class="w10">13900001111</td>
+                  <td class="w15">上海浦东</td>
+                  <td class="w25">复旦大学附属第一中学</td>
+                </tr>
+                <tr>
+                  <td class="w10 admincenter-dx">
+                    <input type="checkbox" name="admincenter" id="admincenter-t4">
+                    <label for="admincenter-t4"></label>
+                  </td>
+                  <td class="w10">12323536124</td>
+                  <td class="w10">老师</td>
+                  <td class="w10">hello</td>
+                  <td class="w10">欧阳锋</td>
+                  <td class="w10">13900001111</td>
+                  <td class="w15">上海浦东</td>
+                  <td class="w25">复旦大学附属第一中学</td>
+                </tr>
+                <tr>
+                  <td class="w10 admincenter-dx">
+                    <input type="checkbox" name="admincenter" id="admincenter-t5">
+                    <label for="admincenter-t5"></label>
+                  </td>
+                  <td class="w10">12323536124</td>
+                  <td class="w10">老师</td>
+                  <td class="w10">hello</td>
+                  <td class="w10">欧阳锋</td>
+                  <td class="w10">13900001111</td>
+                  <td class="w15">上海浦东</td>
+                  <td class="w25">复旦大学附属第一中学</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="bottompage">
+            <ul class="clearfix">
+              <li>上一页</li>
+              <li class="active">1</li>
+              <li>2</li>
+              <li>3</li>
+              <li>4</li>
+              <li>5</li>
+              <li>下一页</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!--弹出层-用户信息-->
+  <div class="cover">
+    <div class="bg">
+      <div class="heading">消息详情<span class="close" id="close"></span></div>
+      <div class="content messageDetail userInfoDetail">
+        <table>
+          <tbody>
+            <tr>
+              <td class="w15 lfont">用户ID：</td>
+              <td class="w35"><input type="text" disabled="disabled" value="12323536124"></td>
+              <td class="w15 lfont">身份：</td>
+              <td class="w35"><input type="text" disabled="disabled" value="老师"></td>
+            </tr>
+            <tr>
+              <td class="w15 lfont">用户昵称：</td>
+              <td class="w35"><input type="text" disabled="disabled" value="hello"></td>
+              <td class="w15 lfont">真实姓名：</td>
+              <td class="w35"><input type="text" disabled="disabled" value="欧阳锋"></td>
+            </tr>
+            <tr>
+              <td class="w15 lfont">电话号码：</td>
+              <td class="w35"><input type="text" disabled="disabled" value="13900001111"></td>
+              <td class="w15 lfont">地区：</td>
+              <td class="w35"><input type="text" disabled="disabled" value="上海浦东"></td>
+            </tr>
+            <tr>
+              <td class="w15 lfont">学校：</td>
+              <td class="w35"><input type="text" disabled="disabled" value="复旦大学附属第一中学"></td>
+              <td class="w15 lfont">申请：</td>
+              <td class="w35"><input type="text" disabled="disabled" value="有申请"></td>
+            </tr>
+            <tr>
+              <td class="w15 lfont">简介：</td>
+              <td class="w35" colspan="3"><textarea disabled="disabled">复旦大学附属第一中学复旦大学附属第一中学复旦大学附属第一中学复旦大学附属第一中学复旦大学附属第一中学复旦大学附属第一中学复旦大学附属第一中学复旦大学附属第一中学复旦大学附属第一中学复旦大学附属第一中学复旦大学附属第一中学</textarea></td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="choosebtn">
+          <input type="button" value="确认" id="close1" class="yes">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="../js/jquery-1.8.3.min.js"></script>
+  <script src="js/admincenter.js"></script>
+</body>
+
+</html>

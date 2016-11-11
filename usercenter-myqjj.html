@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>59学习网--家教申请</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/usercenter.css">
+</head>
+
+<body>
+  <div class="usercenter">
+    <!--左边栏-->
+    <div class="side">
+      <div class="logo">
+        <a href="index.html">
+          <img src="img/usercenter/usercenter-logo.jpg" alt="59个性化学习网，www.59xuexi.com">
+        </a>
+      </div>
+      <div class="menu">
+        <div class="user">
+          <img src="img/usercenter/headpic.png" alt="用户头像">
+          <p>用户名</p>
+        </div>
+        <ul class="nav" id="nav">
+          <li class="myzy"><a href="usercenter.html">个人主页</a></li>
+          <li class="mysc"><a href="usercenter-mysc.html">我的收藏</a></li>
+          <li class="myxx"><a href="usercenter-myxx.html">个人信息</a></li>
+          <li class="myxxk"><a href="usercenter-myxxk.html">我的学习卡</a></li>
+          <li class="mydd"><a href="usercenter-mydd.html">我的订单</a></li>
+          <li class="mylx"><a href="usercenter-mylx.html">在线练习</a></li>
+          <li class="myct"><a href="usercenter-myct.html">错题报告</a></li>
+          <li class="myqjj active"><a href="usercenter-myqjj.html">免费请家教</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="main clearfix">
+      <!--头部-->
+      <div class="heading clearfix">
+        <span id="pullleft"><img src="img/usercenter/pullleft-icon.png" alt="点击收起左栏"></span>
+        <ul>
+          <li class="wHome"><a href="index.html">首页</a></li>
+          <li class="wOut"><a href="">退出</a></li>
+        </ul>
+      </div>
+      <!--主体-->
+      <div class="content">
+        <div class="crumbs">
+          <a href="usercenter.html">个人中心</a><i>>></i><a href="###">免费请家教</a>
+        </div>
+        <div class="type">
+
+          <div class="item">
+            <h4>免费请家教（消息列表）<span><input type="button" name="" value="发布一个新的申请" onclick="window.open('freetutor.html')"></span></h4>
+            <div class="mydd-list">
+              <table cellspacing="0" cellpadding="0" border="0">
+                <tbody>
+                  <tr class="title">
+                    <th class="w10">消息时间</th>
+                    <th class="w10">联系老师</th>
+                    <th class="w10">科目</th>
+                    <th class="w45">知识点</th>
+                    <th class="w15">文件<i>（保存30天）</i></th>
+                    <th class="w10">状态/操作</th>
+                  </tr>
+                  <tr>
+                    <td class="w10">2016-08-08</td>
+                    <td class="w10">王老师</td>
+                    <td class="w10">高中数学</td>
+                    <td class="w45">2015-散文类,先秦诸子百家,历史记载类04-06</td>
+                    <td class="w15 yes">有附件</td>
+                    <td class="w10 yes popup">已发送</td>
+                  </tr>
+                  <tr>
+                    <td class="w10">2016-08-08</td>
+                    <td class="w10">王老师</td>
+                    <td class="w10">高中数学</td>
+                    <td class="w45">2015-散文类,先秦诸子百家,历史记载类04-06</td>
+                    <td class="w15">无附件</td>
+                    <td class="w10 yes popup">已发送</td>
+                  </tr>
+                  <tr>
+                    <td class="w10">2016-08-08</td>
+                    <td class="w10">王老师</td>
+                    <td class="w10">高中数学</td>
+                    <td class="w45">2015-散文类,先秦诸子百家,历史记载类04-06</td>
+                    <td class="w15 yes">有附件</td>
+                    <td class="w10 no popup">未读</td>
+                  </tr>
+                  <tr>
+                    <td class="w10">2016-08-08</td>
+                    <td class="w10">王老师</td>
+                    <td class="w10">高中数学</td>
+                    <td class="w45">2015-散文类,先秦诸子百家,历史记载类04-06</td>
+                    <td class="w15 yes">有附件</td>
+                    <td class="w10 yes popup">已读</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="bottompage">
+              <ul class="clearfix">
+                <li>上一页</li>
+                <li class="active">1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>下一页</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+    <!--弹出层-个人消息-->
+    <div class="cover">
+      <div class="bg">
+        <div class="heading">消息详情<span class="close" id="close"></span></div>
+        <div class="content messageDetail">
+          <table>
+            <tbody>
+              <tr>
+                <td class="w15 lfont">联系人：</td>
+                <td class="w35">王老师</td>
+                <td class="w15 lfont">科目：</td>
+                <td class="w35">高中数学</td>
+              </tr>
+              <tr>
+                <td class="w15 lfont">知识点：</td>
+                <td class="w85" colspan="3">2015-散文类,先秦诸子百家,历史记载类04-06</td>
+              </tr>
+              <tr>
+                <td class="w15 lfont">附件：</td>
+                <td class="w85" colspan="3"><input type="button" name="" value="点击下载附件" class="type4"></td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="choosebtn">
+            <input type="button" value="看好了" class="yes" id="close1">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery-1.8.3.min.js"></script>
+  <script src="js/usercenter.js"></script>
+  <script src="js/public-H-F.js"></script>
+
+</body>
+
+</html>

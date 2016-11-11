@@ -1,0 +1,385 @@
+@charset "utf-8";
+/*CSS document*/
+
+
+/*
+=======
+登录页面
+=======
+*/
+.login-main {
+  position: relative;
+  width: 100%;
+  min-width: 1000px;
+  height: 420px;
+  overflow: hidden;
+}
+
+.login-main .img {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 1920px;
+  height: 420px;
+  margin-left: -960px;
+}
+
+.login {
+  position: absolute;
+  left: 50%;
+  top: 45px;
+  width: 280px;
+  height: 325px;
+  margin-left: 220px;
+}
+
+.login .title {
+  width: 240px;
+  height: 55px;
+  padding: 0 20px;
+  background-color: #1887e3;
+  border-radius: 5px 5px 0 0;
+  font: 18px/55px "Microsoft Yahei";
+  color: #fff;
+}
+
+.login .content {
+  width: 240px;
+  height: 230px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 0 0 5px 5px;
+}
+
+.login .content span.error {
+  display: block;
+  font: 12px/1 "宋体";
+  color: #ff0000;
+  margin: -5px 0 5px;
+}
+
+.login .content input.userinfo {
+  width: 240px;
+  height: 36px;
+  padding: 0 5px;
+  margin-bottom: 10px;
+  background: #fff url(../img/login-icon.png) 5px -40px no-repeat;
+  border-radius: 5px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, .2);
+  text-indent: 25px; 
+}
+
+.login .content input.userinfo1 {
+  background: #fff url(../img/login-icon.png) 5px 8px no-repeat;
+}
+
+.login .content input.error { 
+  border: 1px solid red; 
+}
+
+.login .content p.miss {
+  text-align: right;
+}
+
+.login .content p.miss a {
+  font: 14px/30px "Microsoft Yahei";
+  color: #444;
+}
+
+.login .content p.miss a:hover {
+  text-decoration: underline;
+}
+
+.login .content input.loginsubmit {
+  display: block;
+  width: 240px;
+  height: 42px;
+  margin: 10px 0 10px 0;
+  background-color: #ff9000;
+  border-radius: 5px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, .4);
+  font: 16px/42px "Microsoft Yahei";
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+}
+
+.login .content input.loginsubmit:hover {
+  background-color: rgba(255, 144, 0, .8);
+}
+
+.login .content p.noaccount a {
+  font: 14px/1 "Microsoft Yahei";
+  color: #444;
+  text-decoration: underline;
+}
+
+.login .content p.noaccount a:hover {
+  color: #1887e3;
+}
+
+
+
+/*
+=======
+注册页面
+=======
+*/
+.register-main {
+  padding: 40px 0;
+}
+
+.register-main .usertab a {
+  display: inline-block;
+  width: 50%;
+  height: 50px;
+  background-color: #ddd;
+  font: 22px/50px "Microsoft Yahei";
+  color: #fff;
+  text-align: center;
+}
+
+.register-main .usertab a.active {
+  background-color: #ff9000;
+}
+
+.register-main .usertab a.teacher {
+  float: left;
+}
+
+.register-main .usertab a.student {
+  float: right;
+}
+
+.register-main .main {
+  padding: 40px;
+  border: 1px solid #e3e3e3;
+  border-top: 2px solid #ff9000;
+}
+
+.register-main .main {
+  display: none;
+}
+
+.register-main .main ul {
+  width: 500px;
+  margin-left: 250px;
+}
+
+.register-main .main ul li {
+  height: 40px;
+  margin: 20px 0;
+}
+
+.register-main .main ul li label {
+  display: inline-block;
+  width: 100px;
+  font: 14px/40px "Microsoft Yahei";
+  color: #333;
+  text-align: right;
+}
+
+.register-main .main ul li span {
+  display: inline-block;
+  width: 230px;
+  height: 40px;
+}
+
+.register-main .main ul li input.type1 {
+  width: 230px;
+  height: 40px;
+  padding: 0 5px;
+  border: 1px solid #e3e3e3;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.register-main .main ul li input.type2 {
+  width: 130px;
+  height: 40px;
+  padding: 0 5px;
+  border: 1px solid #e3e3e3;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.register-main .main ul li input.type3 {
+  float: right;
+  width: 90px;
+  height: 40px;
+  padding: 0 5px;
+  border-radius: 5px;
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+.register-main .main ul li input.type3:hover {
+  border: 1px solid #b3b3b3;
+}
+
+.register-main .main ul li input.type4 {
+  width: 230px;
+  height: 40px;
+  padding: 0 5px;
+  border: 1px solid #e3e3e3;
+  border-radius: 5px;
+  background-color: #1887e3;
+  color: #fff;
+  cursor: pointer;
+}
+
+.register-main .main ul li input.error { 
+  border: 1px solid red; 
+}
+
+.register-main .main ul li span a {
+  margin-left: 65px;
+  color: #1887e3;
+}
+
+.register-main .main ul li span a:hover {
+  text-decoration: underline;
+}
+
+.register-main .main ul li em {
+  padding-left: 10px;
+  color: #ff0000;
+}
+
+.register-main .main ul li em.success {
+  color: lawngreen;
+}
+
+.register-main .main .info {
+  width: 400px;
+  height: 150px;
+  display: none;
+  margin-left: 250px;
+  padding: 10px;
+  border: 1px solid #1887e3;
+  border-top-width: 3px;
+  overflow: auto;
+}
+
+.register-main .main .info h3 {
+  margin-bottom: 5px;
+}
+
+.register-main .main .info p {
+  line-height: 1.5;
+  margin-bottom: 5px;
+}
+
+
+/*
+=======
+找回密码
+=======
+*/
+
+
+.resetpassword .main .step {
+  position: relative;
+  width: 600px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.resetpassword .main .step i.line {
+  position: absolute;
+  left: 100px;
+  top: 50px;
+  display: block;
+  width: 400px;
+  height: 3px;
+  background-color: #e3e3e3;
+}
+
+.resetpassword .main .step i.line1 {
+  z-index: -2;
+  background-color: #e3e3e3;
+}
+
+.resetpassword .main .step i.line2 {
+  z-index: -1;
+  width: 200px;
+  background-color: #1887e3;
+}
+
+.resetpassword .main .step i.line3 {
+  z-index: -1;
+  background-color: #1887e3;
+}
+
+.resetpassword .main .step li {
+  float: left;
+  width: 200px;
+  height: auto;
+  text-align: center;
+}
+
+.resetpassword .main .step li span {
+  display: block;
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
+  margin-left: 70px;
+  margin-bottom: 10px;
+  background-color: #e3e3e3;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  font: 18px/50px Arial;
+  color: #aaa;
+}
+
+.resetpassword .main .step li p {
+  font-size: 14px;
+}
+
+.resetpassword .main .step li.active span {
+  background-color: #ff9000;
+  color: #fff;
+}
+
+.resetpassword .main .step li.complete span {
+  background-color: #1887e3;
+  color: #fff;
+}
+
+.resetsuccess {
+  width: 200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.resetsuccess p {
+  font: 24px/40px "Microsoft Yahei";
+  color: #333;
+}
+
+.resetsuccess p i {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  vertical-align: bottom;
+}
+
+.resetsuccess p a {
+  font-size: 18px;
+  color: #1887e3;
+  text-decoration: underline;
+}
+
+.resetsuccess p a:hover {
+  color: #ff9000;
+}
+
+
+input.focus {
+  border-color: #ff9000 !important;
+}
+
+
+
+

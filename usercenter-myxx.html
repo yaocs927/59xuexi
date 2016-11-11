@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>59学习网--我的收藏</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/usercenter.css">
+</head>
+
+<body>
+
+  <div class="usercenter">
+    <!--左边栏-->
+    <div class="side">
+      <div class="logo">
+        <a href="index.html">
+          <img src="img/usercenter/usercenter-logo.jpg" alt="59个性化学习网，www.59xuexi.com">
+        </a>
+      </div>
+      <div class="menu">
+        <div class="user">
+          <img src="img/usercenter/headpic.png" alt="用户头像">
+          <p>用户名</p>
+        </div>
+        <ul class="nav" id="nav">
+          <li class="myzy"><a href="usercenter.html">个人主页</a></li>
+          <li class="mysc"><a href="usercenter-mysc.html">我的收藏</a></li>
+          <li class="myxx active"><a href="usercenter-myxx.html">个人信息</a></li>
+          <li class="myxxk"><a href="usercenter-myxxk.html">我的学习卡</a></li>
+          <li class="mydd"><a href="usercenter-mydd.html">我的订单</a></li>
+          <li class="mylx"><a href="usercenter-mylx.html">在线练习</a></li>
+          <li class="myct"><a href="usercenter-myct.html">错题报告</a></li>
+          <li class="myqjj"><a href="freetutor.html">免费请家教</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!--主要内容-->
+    <div class="main clearfix">
+      <!--头部-->
+      <div class="heading clearfix">
+        <span id="pullleft"><img src="img/usercenter/pullleft-icon.png" alt="点击收起左栏"></span>
+        <ul>
+          <li class="wHome"><a href="index.html">首页</a></li>
+          <li class="wOut"><a href="">退出</a></li>
+        </ul>
+      </div>
+      <!--主体-->
+      <div class="content">
+        <div class="crumbs">
+          <a href="usercenter.html">个人中心</a><i>>></i><a href="###">个人信息</a>
+        </div>
+        <div class="type">
+
+          <div class="item">
+            <h4>个人信息<span><input type="button" name="" value="完善个人信息" id="changeinfobtn"></span></h4>
+            <div class="myxx">
+              <table id="infolist">
+                <tr>
+                  <td class="left">头像：</td>
+                  <td class="right">
+                    <span class="avatar"><img src="img/usercenter/headpic.png" alt="用户头像"></span>
+                    <span class="uploadavatar">
+                      <input type="button" placeholder="请输入新的昵称" id="uploadavatar" value="点击修改头像" class="popup1">
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="left">昵称：</td>
+                  <td class="right changeinfo">
+                    <span>hello</span>
+                    <span class="hide in-type"><input type="text" placeholder="请输入新的昵称" ></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="left">真实姓名：</td>
+                  <td class="right changeinfo">
+                    <span class="red">暂无</span>
+                    <span class="hide in-type"><input type="text" placeholder="请输入真实姓名"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="left">密码：</td>
+                  <td class="right changePW">
+                    <span class="blue" id="changePW1">修改</span>
+                    <span class="hide in-type">
+                      <input type="text" placeholder="请输入旧密码" >
+                      <input type="text" placeholder="请输入新密码">
+                      <input type="text" placeholder="请再输入一遍新密码">
+                      <input type="button" class="in-type1" value="保 存" ><input type="button" class="in-type2" value="取 消" id="changePW2">
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="left">手机：</td>
+                  <td class="right">
+                    <span>150****2222 <em class="blue" id="changePW4">修改</em></span>
+                    <span class="hide in-type"><input type="text" placeholder="请输入新号码" class="in-type4"><input type="text" placeholder="请输入验证码" class="in-type6"><input type="button" value="发送验证码" class="in-type5"><input type="button" class="in-type1" value="保 存" ><input type="button" class="in-type2" value="取 消" id="changePW5"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="left">地区：</td>
+                  <td class="right changeinfo">
+                    <span class="red">暂无</span>
+                    <span class="hide in-type"><input type="text" placeholder="请输入所在地区"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="left">学校：</td>
+                  <td class="right changeinfo">
+                    <span class="red">暂无</span>
+                    <span class="hide in-type"><input type="text" placeholder="请输入学校名"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="left">个人简介：</td>
+                  <td class="right changeinfo">
+                    <span class="red">暂无</span>
+                    <span class="hide in-type">
+                      <textarea class="in-type3" placeholder="个人简介，10~200字之间"></textarea>
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="left"></td>
+                  <td class="right changeinfo">
+                    <span></span>
+                    <span class="hide in-type">
+                      <input type="button" class="in-type1" value="保 存" ><input type="button" class="in-type2" value="取 消" id="changePW3">
+                    </span>
+                  </td>
+                </tr>
+              </table>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--弹出层-修改头像-->
+  <div class="cover">
+    <div class="bg">
+      <div class="heading">修改头像<span class="close" id="close"></span></div>
+      <div class="content messageDetail">
+        <div class="container">
+          <div class="imageBox">
+            <div class="thumbBox"></div>
+            <div class="spinner">使用鼠标滚轮进行缩放</div>
+          </div>
+          <div class="action">
+            <!--<input type="file" id="file" style=" width: 200px">-->
+            <div class="new-contentarea tc">
+              <a href="javascript:void(0)" class="upload-img">
+                <label for="upload-file">上传图像</label>
+              </a>
+              <input type="file" class="" name="upload-file" id="upload-file" />
+            </div>
+            <input type="button" class="Btnsty_peyton no" value="取消" id="close1">
+            <!--id="btnZoomOut"-->
+            <input type="button" class="Btnsty_peyton" value="确认">
+            <!--id="btnZoomIn"-->
+            <input type="button" id="btnCrop" class="Btnsty_peyton" value="裁切">
+
+          </div>
+          <div class="cropped"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery-1.8.3.min.js"></script>
+  <script src="js/cropbox.js"></script>
+  <script src="js/usercenter.js"></script>
+  <script src="js/placeholder.js"></script>
+
+
+
+</body>
+
+</html>

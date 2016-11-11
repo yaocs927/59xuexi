@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>59学习网--后台管理</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" type="text/css" href="../css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/admincenter.css">
+</head>
+
+<body>
+  <div class="admincenter">
+    <!--左边栏-->
+    <div class="side">
+      <div class="logo">
+        <a href="../index.html" target="_blank">
+          <img src="img/usercenter-logo.jpg" alt="59个性化学习网，www.59xuexi.com">
+        </a>
+      </div>
+      <div class="menu">
+        <div class="user">
+          <img src="img/headpic.png" alt="用户头像">
+          <p>admin</p>
+        </div>
+        <ul class="nav" id="nav">
+          <!--学生列表-->
+          <li class="myzy"><a href="admincenter.html">管理员管理</a></li>
+          <li class="myzy"><a href="admin-yh.html">用户管理</a></li>
+          <li class="myct active"><a href="admin-st.html">试题管理</a></li>
+          <li class="myct"><a href="admin-sj.html">试卷管理</a></li>
+          <li class="mylx"><a href="admin-stlx.html">试题类型管理</a></li>
+          <li class="mylx"><a href="admin-sjlx.html">试卷类型管理</a></li>
+          <li class="mydd"><a href="admin-kmlb.html">科目类别管理</a></li>
+          <li class="mydd"><a href="admin-zsd.html">知识点管理</a></li>
+          <li class="myqjj"><a href="admin-xq.html">需求管理</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!--主要内容-->
+    <div class="main clearfix">
+      <!--头部-->
+      <div class="heading clearfix">
+        <span id="pullleft"><img src="img/pullleft-icon.png" alt="点击收起左栏"></span>
+        <i>后台管理系统</i>
+        <ul>
+          <li class="wHome"><a href="../index.html" target="_blank">网站首页</a></li>
+          <li class="wHome"><a href="admincenter.html">后台首页</a></li>
+          <li class="wOut"><a href="">退出</a></li>
+        </ul>
+      </div>
+      <!--主体-->
+      <div class="content">
+        <div class="crumbs">
+          <a href="usercenter.html">管理员中心</a><i>>></i><a href="###">试题管理</a>
+          <div class="messages">
+            <p><a href="admin-xq.html" class="messagelink">您有<span>50</span>条需求未处理，点击查看</a></p>
+          </div>
+        </div>
+        <!--添加部分-->
+        <div class="type">
+          <h4>添加试题</h4>
+          <div class="info">
+            <form>
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="w10 lfont"><i>*</i>题型：</td>
+                    <td class="w23">
+                      <div class="selectBox">
+                        <div class="cur-selected" id="ST-txName">请选择</div>
+                        <div class="list">
+                          <ul class="droptype course">
+                            <li>小学1</li>
+                            <li>初中1</li>
+                            <li>高中1</li>
+                            <li>小学1</li>
+                            <li>初中1</li>
+                            <li>高中1</li>
+                            <li>小学1</li>
+                            <li>初中1</li>
+                            <li>高中1</li>
+                            <li>小学1</li>
+                            <li>初中1</li>
+                            <li>高中1</li>
+                            <li>小学1</li>
+                            <li>初中1</li>
+                            <li>高中1</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="w10 lfont"><i>*</i>科目：</td>
+                    <td class="w23">
+                      <div class="selectBox selectBox1">
+                        <div class="cur-selected" id="ST-kmName">请选择</div>
+                        <div class="list">
+                          <ul class="droptype course">
+                            <li>小学1</li>
+                            <li>初中1</li>
+                            <li>高中1</li>
+                            <li>小学1</li>
+                            <li>初中1</li>
+                            <li>高中1</li>
+                            <li>小学1</li>
+                            <li>初中1</li>
+                            <li>高中1</li>
+                            <li>小学1</li>
+                            <li>初中1</li>
+                            <li>高中1</li>
+                            <li>小学1</li>
+                            <li>初中1</li>
+                            <li>高中1</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="w10 lfont"><i>*</i>知识点：</td>
+                    <td class="w23">
+                      <div class="selectBox selectBox1">
+                        <div class="cur-selected" id="ST-zsdName">请选择</div>
+                        <div class="list">
+                          <ul class="droptype course">
+                            <li>小学1</li>
+                            <li>初中1</li>
+                            <li>高中1</li>
+                            <li>小学1</li>
+                            <li>初中1</li>
+                            <li>高中1</li>
+                            <li>小学1</li>
+                            <li>初中1</li>
+                            <li>高中1</li>
+                            <li>小学1</li>
+                            <li>初中1</li>
+                            <li>高中1</li>
+                            <li>小学1</li>
+                            <li>初中1</li>
+                            <li>高中1</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="tableinline">
+                <tbody>
+                  <tr>
+                    <td class="w10 lfont"><i>*</i>题干：</td>
+                    <td class="w23 uploadWrap" colspan="3">
+                      <input type="text" class="type1 filename" placeholder="提干文件上传">
+                      <span class="upload">
+                        <label for="tigan">上传文件</label>
+                        <input type="file" name="upload" class="file" id="tigan">
+                      </span>
+                    </td>
+                    <td class="w10"></td>
+                    <td class="w23"></td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="tableinline">
+                <tbody>
+                  <tr>
+                    <td class="w10 lfont"><i>*</i>内容：</td>
+                    <td class="w23 uploadWrap" colspan="3">
+                      <input type="text" class="type1 filename" placeholder="内容文件上传">
+                      <span class="upload">
+                        <label for="neirong">上传文件</label>
+                        <input type="file" name="upload" class="file" id="neirong">
+                      </span>
+                    </td>
+                    <td class="w10"></td>
+                    <td class="w23"></td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="tableinline">
+                <tbody>
+                  <tr>
+                    <td class="w10 lfont"><i>*</i>正确答案：</td>
+                    <td class="w23 uploadWrap">
+                      <input type="text" class="type1 filename" placeholder="正确答案文件上传">
+                      <span class="upload">
+                        <label for="zq-daan">上传文件</label>
+                        <input type="file" name="upload" class="file" id="zq-daan">
+                      </span>
+                    </td>
+                    <td class="w10 lfont"></td>
+                    <td class="w23"><input type="button" class="type4 addST" value="添加试题"></td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="tableinline">
+                <tbody>
+                  <tr>
+                    <td class="w10 lfont"><i>*</i>答案A：</td>
+                    <td class="w23 uploadWrap">
+                      <input type="text" class="type1 filename" placeholder="A选项文件上传">
+                      <span class="upload">
+                        <label for="answerA">上传文件</label>
+                        <input type="file" name="upload" class="file" id="answerA">
+                      </span>
+                    </td>
+                    <td class="w10"></td>
+                    <td class="w23"></td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="tableinline">
+                <tbody>
+                  <tr>
+                    <td class="w10 lfont"><i>*</i>答案B：</td>
+                    <td class="w23 uploadWrap">
+                      <input type="text" class="type1 filename" placeholder="B选项文件上传">
+                      <span class="upload">
+                        <label for="answerB">上传文件</label>
+                        <input type="file" name="upload" class="file" id="answerB">
+                      </span>
+                    </td>
+                    <td class="w10"></td>
+                    <td class="w23"></td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="tableinline">
+                <tbody>
+                  <tr>
+                    <td class="w10 lfont"><i>*</i>答案C：</td>
+                    <td class="w23 uploadWrap">
+                      <input type="text" class="type1 filename" placeholder="C选项文件上传">
+                      <span class="upload">
+                        <label for="answerC">上传文件</label>
+                        <input type="file" name="upload" class="file" id="answerC">
+                      </span>
+                    </td>
+                    <td class="w10"></td>
+                    <td class="w23"></td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="tableinline">
+                <tbody>
+                  <tr>
+                    <td class="w10 lfont"><i>*</i>答案D：</td>
+                    <td class="w23 uploadWrap">
+                      <input type="text" class="type1 filename" placeholder="D选项文件上传">
+                      <span class="upload">
+                        <label for="answerD">上传文件</label>
+                        <input type="file" name="upload" class="file" id="answerD">
+                      </span>
+                    </td>
+                    <td class="w10"></td>
+                    <td class="w23"></td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="tableinline">
+                <tbody>
+                  <tr>
+                    <td class="w10 lfont"><i>*</i>答案E：</td>
+                    <td class="w23 uploadWrap">
+                      <input type="text" class="type1 filename" placeholder="E选项文件上传">
+                      <span class="upload">
+                        <label for="answerE">上传文件</label>
+                        <input type="file" name="upload" class="file" id="answerE">
+                      </span>
+                    </td>
+                    <td class="w10 lfont"></td>
+                    <td class="w23"><input type="button" class="type4 addST" value="添加选择题答案"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </form>
+          </div>
+        </div>
+        <!--查询部分-->
+        <div class="type">
+          <h4>试题列表</h4>
+          <!--查询-->
+          <div class="info">
+            <form>
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="w10 lfont">题型：</td>
+                    <td class="w23">
+                      <div class="selectBox">
+                        <div class="cur-selected">请选择</div>
+                        <div class="list">
+                          <ul class="droptype course">
+                            <li>小学1</li>
+                            <li>初中1</li>
+                            <li>高中1</li>
+                            <li>小学1</li>
+                            <li>初中1</li>
+                            <li>高中1</li>
+                            <li>小学1</li>
+                            <li>初中1</li>
+                            <li>高中1</li>
+                            <li>小学1</li>
+                            <li>初中1</li>
+                            <li>高中1</li>
+                            <li>小学1</li>
+                            <li>初中1</li>
+                            <li>高中1</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="w10 lfont">科目：</td>
+                    <td class="w23">
+                      <div class="selectBox">
+                        <div class="cur-selected">请选择</div>
+                        <div class="list">
+                          <ul class="droptype course">
+                            <li>小学1</li>
+                            <li>初中1</li>
+                            <li>高中1</li>
+                            <li>小学1</li>
+                            <li>初中1</li>
+                            <li>高中1</li>
+                            <li>小学1</li>
+                            <li>初中1</li>
+                            <li>高中1</li>
+                            <li>小学1</li>
+                            <li>初中1</li>
+                            <li>高中1</li>
+                            <li>小学1</li>
+                            <li>初中1</li>
+                            <li>高中1</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="w10 lfont">知识点：</td>
+                    <td class="w24">
+                      <div class="selectBox">
+                        <div class="cur-selected">请选择</div>
+                        <div class="list">
+                          <ul class="droptype course">
+                            <li>小学1</li>
+                            <li>初中1</li>
+                            <li>高中1</li>
+                            <li>小学1</li>
+                            <li>初中1</li>
+                            <li>高中1</li>
+                            <li>小学1</li>
+                            <li>初中1</li>
+                            <li>高中1</li>
+                            <li>小学1</li>
+                            <li>初中1</li>
+                            <li>高中1</li>
+                            <li>小学1</li>
+                            <li>初中1</li>
+                            <li>高中1</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="w10"></td>
+                    <td class="w23"></td>
+                    <td class="w10"></td>
+                    <td class="w23"> </td>
+                    <td class="w10"></td>
+                    <td class="w23"><input type="button" class="type4" value="查询试题"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </form>
+          </div>
+          <!--结果-->
+          <div class="infolist">
+            <div class="status">
+              <input type="button" value="删除试题" class="active deleteAdmin">
+            </div>
+            <table cellspacing="0" cellpadding="0" border="0">
+              <tbody>
+                <tr class="title">
+                  <th class="w10"></th>
+                  <th class="w20">试题ID</th>
+                  <th class="w10">题型</th>
+                  <th class="w10">科目</th>
+                  <th class="w30">知识点</th>
+                  <th class="w20">详情</th>
+                </tr>
+                <!--<tr>
+                  <td class="w10 admincenter-dx">
+                    <input type="checkbox" name="admincenter" id="admincenter-1">
+                    <label for="admincenter-1"></label>
+                  </td>
+                  <td class="w20">试题ID</td>
+                  <td class="w10">2015040611</td>
+                  <td class="w10">100元学习卡</td>
+                  <td class="w30">100元学习卡</td>
+                  <td class="w20">100元学习卡</td>
+                </tr>-->
+              </tbody>
+            </table>
+          </div>
+          <div class="bottompage">
+            <ul class="clearfix">
+              <li>上一页</li>
+              <li class="active">1</li>
+              <li>2</li>
+              <li>3</li>
+              <li>4</li>
+              <li>5</li>
+              <li>下一页</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="../js/jquery-1.8.3.min.js"></script>
+  <script src="js/admincenter.js"></script>
+</body>
+
+</html>

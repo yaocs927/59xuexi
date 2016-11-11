@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>59学习网--家教申请</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/usercenter.css">
+</head>
+
+<body>
+  <div class="usercenter">
+    <!--左边栏-->
+    <div class="side">
+      <div class="logo">
+        <a href="index.html">
+          <img src="img/usercenter/usercenter-logo.jpg" alt="59个性化学习网，www.59xuexi.com">
+        </a>
+      </div>
+      <div class="menu">
+        <div class="user">
+          <img src="img/usercenter/headpic.png" alt="用户头像">
+          <p>用户名</p>
+        </div>
+        <ul class="nav" id="nav">
+          <!--老师列表-->
+          <li class="myzy"><a href="usercenterT.html">个人主页</a></li>
+          <li class="mysc"><a href="usercenter-myscT.html">我的收藏</a></li>
+          <li class="myxx"><a href="usercenter-myxxT.html">个人信息</a></li>
+          <li class="myqjj active"><a href="usercenter-myqjjT.html">学生申请</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="main clearfix">
+      <!--头部-->
+      <div class="heading clearfix">
+        <span id="pullleft"><img src="img/usercenter/pullleft-icon.png" alt="点击收起左栏"></span>
+        <ul>
+          <li class="wHome"><a href="index.html">首页</a></li>
+          <li class="wOut"><a href="">退出</a></li>
+        </ul>
+      </div>
+      <!--主体-->
+      <div class="content">
+        <div class="crumbs">
+          <a href="usercenter.html">个人中心</a><i>>></i><a href="###">学生申请列表</a>
+          <div class="messages">
+            <p><a href="usercenter-myqjjT.html" class="messagelink">您有<span>50</span>条消息未读，点击查看</a></p>
+          </div>
+        </div>
+
+        <div class="type">
+
+          <div class="item">
+            <h4>学生申请列表（消息列表）</h4>
+            <div class="mydd-list">
+              <table cellspacing="0" cellpadding="0" border="0">
+                <tbody>
+                  <tr class="title">
+                    <th class="w10">消息时间</th>
+                    <th class="w10">联系学生</th>
+                    <th class="w10">科目</th>
+                    <th class="w45">知识点</th>
+                    <th class="w15">文件<i>（保存30天）</i></th>
+                    <th class="w10">状态/操作</th>
+                  </tr>
+                  <tr>
+                    <td class="w10">2016-08-08</td>
+                    <td class="w10">王老师</td>
+                    <td class="w10">高中数学</td>
+                    <td class="w45">2015-散文类,先秦诸子百家,历史记载类04-06</td>
+                    <td class="w15 yes">有附件</td>
+                    <td class="w10 yes popup">已回复</td>
+                  </tr>
+                  <tr>
+                    <td class="w10">2016-08-08</td>
+                    <td class="w10">王老师</td>
+                    <td class="w10">高中数学</td>
+                    <td class="w45">2015-散文类,先秦诸子百家,历史记载类04-06</td>
+                    <td class="w15">无附件</td>
+                    <td class="w10 yes popup">已读</td>
+                  </tr>
+                  <tr>
+                    <td class="w10">2016-08-08</td>
+                    <td class="w10">王老师</td>
+                    <td class="w10">高中数学</td>
+                    <td class="w45">2015-散文类,先秦诸子百家,历史记载类04-06</td>
+                    <td class="w15 yes">有附件</td>
+                    <td class="w10 yes popup">已读</td>
+                  </tr>
+                  <tr>
+                    <td class="w10">2016-08-08</td>
+                    <td class="w10">王老师</td>
+                    <td class="w10">高中数学</td>
+                    <td class="w45">2015-散文类,先秦诸子百家,历史记载类04-06</td>
+                    <td class="w15 yes">有附件</td>
+                    <td class="w10 no popup">未读</td>
+                  </tr>
+                  <tr>
+                    <td class="w10">2016-08-08</td>
+                    <td class="w10">王老师</td>
+                    <td class="w10">高中数学</td>
+                    <td class="w45">2015-散文类,先秦诸子百家,历史记载类04-06</td>
+                    <td class="w15">无附件</td>
+                    <td class="w10 no popup">未读</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="bottompage">
+              <ul class="clearfix">
+                <li>上一页</li>
+                <li class="active">1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>下一页</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+    
+    <!--弹出层-个人消息-->
+    <div class="cover">
+      <div class="bg">
+        <div class="heading">消息详情<span class="close" id="close"></span></div>
+        <div class="content messageDetail">
+          <table>
+            <tbody>
+              <tr>
+                <td class="w15 lfont">联系人：</td>
+                <td class="w35">hello同学</td>
+                <td class="w15 lfont">科目：</td>
+                <td class="w35">高中数学</td>
+              </tr>
+              <tr>
+                <td class="w15 lfont">知识点：</td>
+                <td class="w85" colspan="3">2015-散文类,先秦诸子百家,历史记载类04-06</td>
+              </tr>
+              <tr>
+                <td class="w15 lfont">学生附件：</td>
+                <td class="w35"><input type="button" name="" value="点击下载附件" class="type4"></td>
+                <td class="w15 lfont">老师附件：</td>
+                <td class="w35"><input type="button" name="" value="点击下载附件" class="type4"></td>
+              </tr>
+              <tr>
+                <td class="w15 lfont">上传文件：</td>
+                <td class="w50" colspan="2"><input type="text" class="type2" id="filename" placeholder="可将题目解析整理成文档，回复给提问学生"></td>
+                <td class="w35 upload"><label for="upload">请选择上传文件</label><input type="file" name="upload" id="file"></td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="choosebtn">
+            <input type="button" value="回复消息" class="yes">
+            <input type="button" value="稍后回复" id="close1" class="no">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery-1.8.3.min.js"></script>
+  <script src="js/usercenter.js"></script>
+  <!--上传文件显示文件名-->
+  <script type="text/javascript">
+    $(function () {
+      var file = $('#file'),
+          filename = $('#filename');
+      file.on('change', function (e) {
+        //e.currentTarget.files 是一个数组，如果支持多个文件，则需要遍历
+        var name = e.currentTarget.files[0].name;
+        filename.val(name);
+      });
+    })
+
+
+
+  </script>
+</body>
+
+</html>

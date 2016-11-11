@@ -1,0 +1,391 @@
+@charset "utf-8";
+
+/*CSS document*/
+
+
+/*
+===========
+在线练习
+===========
+*/
+
+
+/*在线练习一*/
+
+.onlinetestMain {
+  padding: 40px 0 80px;
+}
+
+.onlinetestMain .item .title {
+  width: 100%;
+  height: 40px;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.onlinetestMain .item h3 {
+  position: relative;
+  float: left;
+  font: 22px/1 "Microsoft Yahei";
+  color: #333;
+}
+
+.onlinetestMain .item h3 span {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  content: " ";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #1887e3;
+}
+
+.onlinetestMain .item h3 i {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  content: " ";
+  display: block;
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-left-color: #1887e3;
+  transform: translateY(-50%);
+}
+
+.onlinetestMain .item .content {
+  padding: 40px 0 50px;
+}
+
+.onlinetestMain .item .content .selectBox {
+  position: relative;
+  width: 200px;
+  height: 36px;
+  border: 1px solid #bebebe;
+}
+
+.onlinetestMain .item .content .selectBox .cur-selected {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 190px;
+  height: 36px;
+  padding-left: 10px;
+  font: 14px/36px "Microsoft Yahei";
+  color: #333;
+  cursor: pointer;
+}
+
+.onlinetestMain .item .content .selectBox .cur-selected:after {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+  content: " ";
+  display: block;
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-top-color: #333;
+}
+
+.onlinetestMain .item .content .selectBox .list {
+  position: absolute;
+  top: 36px;
+  left: -1px;
+  z-index: 50;
+  display: none;
+  width: 200px;
+  max-height: 300px;
+  overflow: auto;
+  padding-bottom: 5px;
+  border: 1px solid #bebebe;
+  background-color: #fff;
+  overflow-x: hidden;
+}
+
+.onlinetestMain .item .selectBox .list .type li {
+  width: 200px;
+  height: 30px;
+  line-height: 30px;
+  cursor: pointer;
+  text-indent: 10px;
+}
+
+.onlinetestMain .item .selectBox .list .type li.y-ol-title {
+  background-color: #e3e3e3;
+  color: #f58b01;
+  cursor: default;
+}
+
+.onlinetestMain .item .selectBox .list .type li.y-ol-title:hover {
+  color: #f58b01;
+}
+
+.onlinetestMain .item .selectBox .list .type li:hover {
+  color: #000;
+}
+
+.onlinetestMain .item .selectBox .list .china-abroad li {
+  font-size: 14px;
+  background-color: #e3e3e3;
+}
+
+.onlinetestMain .item .selectBox .list .china-abroad li.active {
+  background-color: #fff;
+  color: #ff9000;
+}
+
+.onlinetestMain .item .selectBox .list .china-abroad li,
+.onlinetestMain .item .selectBox .list .china,
+.onlinetestMain .item .selectBox .list .china li,
+.onlinetestMain .item .selectBox .list .abroad li {
+  float: left;
+}
+
+.onlinetestMain .item .selectBox .list .china {
+  /*display: none;*/
+}
+
+.onlinetestMain .item .selectBox .list .abroad {
+  float: right;
+  /*display: none;*/
+}
+
+.onlinetestMain .item .testnum span {
+  display: inline-block;
+  width: 80px;
+  height: 30px;
+  margin-right: 20px;
+  background-color: #1887e3;
+  font: 12px/30px "Microsoft Yahei";
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.onlinetestMain .item .testnum i {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #ff9000;
+  font: 18px/18px "Microsoft Yahei";
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.onlinetestMain .item .testnum i.disabled {
+  background-color: #959595;
+  cursor: not-allowed;
+}
+
+.onlinetestMain .item .testnum input {
+  width: 60px;
+  height: 30px;
+  padding: 5px;
+  background-color: #e3e3e3;
+  vertical-align: middle;
+}
+
+.onlinetestMain .otBigBtn {
+  width: 200px;
+  height: 60px;
+  margin: 20px auto;
+}
+
+.onlinetestMain .otBigBtn a {
+  display: inline-block;
+  width: 200px;
+  height: 60px;
+  background-color: #ff9000;
+  font: 24px/60px "Microsoft Yahei";
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+}
+
+.onlinetestMain .otBigBtn a:hover {
+  background-color: #f58b01;
+}
+
+
+/*在线练习二*/
+
+.onlinetestMain .item .content .left {
+  float: left;
+  width: 198px;
+  max-height: 400px;
+  background-color: #fff;
+  border: 1px solid #e3e3e3;
+  overflow: auto;
+}
+
+.onlinetestMain .item .content .left ul li {
+  padding: 0 10px;
+  height: 36px;
+  color: #333;
+  line-height: 36px;
+  cursor: pointer;
+}
+
+
+/*.onlinetestMain .item .content .left ul li i {
+  float: right;
+  width: 6px;
+  height: 36px;
+  background: url(../img/onlinetest/knowledgepoint-list-icon.png) right top no-repeat;
+}*/
+
+.onlinetestMain .item .content .left ul li+ li {
+  border-top: 1px solid #e3e3e3;
+}
+
+.onlinetestMain .item .content .left ul li:hover {
+  background-color: #1887e3;
+  color: #fff;
+}
+
+.onlinetestMain .item .content .left ul li:hover i {
+  background: url(../img/onlinetest/knowledgepoint-list-icon.png) left top no-repeat;
+}
+
+.onlinetestMain .item .content .left ul li.active {
+  background-color: #ff9000;
+  color: #fff;
+}
+
+.onlinetestMain .item .content .left ul li.active i {
+  background: url(../img/onlinetest/knowledgepoint-list-icon.png) left top no-repeat;
+}
+
+.onlinetestMain .item .content .right {
+  float: right;
+  width: 768px;
+  padding: 10px 10px 50px;
+  background-color: #fff;
+  border: 1px solid #e3e3e3;
+  overflow: hidden;
+}
+
+.onlinetestMain .item .content .right .heading {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+  border-bottom: 1px dashed #e3e3e3;
+  font: 16px/30px "Microsoft Yahei";
+  color: #333;
+}
+
+.onlinetestMain .item .content .right .heading em {
+  margin: 0 10px;
+  font-size: 20px;
+  color: #ff9000;
+}
+
+.onlinetestMain .item .content .right .heading span {
+  float: right;
+}
+
+.onlinetestMain .item .content .right .heading span input {
+  padding: 8px 10px;
+  background-color: #1887e3;
+  font: 16px/1 "Microsoft Yahei";
+  color: #fff;
+  cursor: pointer;
+}
+
+.onlinetestMain .item .content .right .heading span input.active {
+  background-color: #989898;
+  color: #fff;
+}
+
+.onlinetestMain .item .content .right .knowldgeLabel {
+  width: 100%;
+  height: auto;
+  padding-bottom: 40px;
+}
+
+.onlinetestMain .item .content .right .knowldgeLabel span {
+  display: inline-block;
+  padding: 8px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  background-color: #d9edf7;
+  color: #1887e3;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.onlinetestMain .item .content .right .knowldgeLabel span i {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-left: 5px;
+  background: url(../img/onlinetest/close.png) left 3px no-repeat;
+  font-style: normal;
+}
+
+.onlinetestMain .item .content .right .knowldgeLabel span:hover {
+  background-color: #1887e3;
+  color: #fff;
+}
+
+.onlinetestMain .item .content .right .knowldgeLabel span:hover i {
+  background: url(../img/onlinetest/close.png) left bottom no-repeat;
+}
+
+
+/*在线练习三*/
+
+.onlinetestMain .item .content .list {
+  margin-bottom: 10px;
+}
+
+.onlinetestMain .item .content .list .num {
+  float: left;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  background-color: #1887e3;
+  color: #fff;
+  text-align: center;
+}
+
+.onlinetestMain .item .content .list .main {
+  float: right;
+  width: 938px;
+  padding: 15px;
+  border: 1px solid #e3e3e3;
+}
+
+.onlinetestMain .item .content .list .select li {
+  height: 30px;
+  line-height: 30px;
+}
+
+.onlinetestMain .item .content .list .select li label input,
+.onlinetestMain .item .content .list .select li label img {
+  vertical-align: middle;
+}
+
+.onlinetestMain .item .content .list .answertext {
+  height: 40px;
+  margin: 20px 0;
+  border-top: 1px dashed #e3e3e3;
+  font-size: 16px;
+  line-height: 40px;
+}
+
+.onlinetestMain .item .content .list .answertext span {
+  font-size: 22px;
+  color: #ff9000;
+}
+
+.onlinetestMain .item .content .list .answertext span.red {
+  color: red;
+}
+
+.onlinetestMain .item .content .list .answertext span.green {
+  color: limegreen;
+}

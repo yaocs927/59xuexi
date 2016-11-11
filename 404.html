@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>59学习网--在线题库</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/public-H-F.css">
+  <link rel="stylesheet" type="text/css" href="css/questionsbank.css">
+</head>
+
+<body>
+
+  <!--头部开始-->
+  <div class="header">
+    <!--顶部条-->
+    <div class="topbar">
+      <div class="comWidth clearfix">
+        <p>欢迎来到59学习网！</p>
+        <!--顶部条登录前-->
+        <div class="right">
+          <a href="login.html" class="toplogin">请登录</a>
+          <a href="register.html">免费注册</a>
+          <a href="help.html">使用帮助</a>
+        </div>
+        <!--顶部条登录后-->
+        <div class="loggedin-right">
+          <span class="type1">
+            欢迎您，<a href="usercenter.html" id="userenter">hello你</a>
+            <ul id="userenter-list">
+              <li><a href="usercenter.html">个人中心</a></li>
+              <li><a href="usercenter-myxx.html">账号设置</a></li>
+              <li><a href="###">退出登录</a></li>
+            </ul>
+          </span>
+          <span>
+            <a href="help.html">使用帮助</a>
+          </span>
+        </div>
+      </div>
+    </div>
+    <!--LOGO标题-->
+    <div class="logo">
+      <div class="comWidth clearfix">
+        <div class="logoimg">
+          <a href="index.html">
+            <img src="img/logo.jpg" alt="题库网">
+          </a>
+        </div>
+        <div class="info">
+          <p class="call">400-400-4000</p>
+          <p class="time">
+            <em>周一至周五</em>
+            <span>9:00-18:00</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!--子页面标题-->
+  <div class="bg404">
+  </div>
+
+  <!--主要内容-->
+  <div class="main-404">
+    <div class="comWidth clearfix">
+      <div class="main">
+        <img src="img/404.png" alt="404错误页面">
+        <p class="big">出错了</p>
+        <p class="small">未找到您访问的页面</p>
+        <a href="index.html">返回首页</a>
+      </div>
+    </div>
+  </div>
+
+  <!--弹出层-登录-->
+  <div class="cover">
+    <div class="bg">
+      <div class="heading">登录<span class="close" id="close"></span></div>
+      <div class="content login">
+        <form id="loginForm">
+          <p>
+            <input type="text" name="login-username" class="userinfo userinfo1" placeholder="请输入注册手机号">
+          </p>
+          <p>
+            <input type="password" name="login-userpassword" class="userinfo" placeholder="请输入密码">
+          </p>
+          <p class="miss"><a href="resetpassword1.html">忘记密码</a></p>
+          <input type="submit" value="登 录" class="loginsubmit">
+          <p class="noaccount"><a href="register.html">还没有账号？点击注册...</a></p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!--弹出层-收藏提示-->
+  <!--<div class="cover">
+    <div class="bg">
+      <div class="heading">提示<span class="close" id="close"></span></div>
+      <div class="content prompt">
+        <p class="success"><i></i>收藏成功</p>
+        <form>
+          <label for="pointtips">添加标签：</label>
+          <input type="text" name="pointtips" class="pointtips" value="高中数学,">
+          <p class="info">请输入知识点标签，用英文“,”隔开，最多三个</p>
+          <label for="pointtips-list">常用标签：</label>
+          <input type="button" name="pointtips-list" class="pointtips-list" value="经典题">
+          <input type="button" name="pointtips-list" class="pointtips-list" value="易错题">
+          <input type="button" name="pointtips-list" class="pointtips-list" value="难题">
+          <input type="button" value="确定" class="confirm">
+        </form>
+      </div>
+    </div>
+  </div>-->
+
+  <!--回到顶部-->
+  <div class="backtop">
+    <ul>
+      <li><a href="">问题反馈</a></li>
+      <li class="top">
+        <a href="#top"></a>
+      </li>
+    </ul>
+  </div>
+
+  <!--页尾-->
+  <div class="footer">
+    <div class="comWidth">
+      <ul class="clearfix">
+        <li><a href="about.html">关于我们</a></li>
+        <li><a href="contact.html">联系我们</a></li>
+        <li><a href="service.html">服务条款</a></li>
+        <li><a href="statement.html">法律声明</a></li>
+      </ul>
+      <p>Copyright © 2015 版权所有 沪ICP备20310318-3号</p>
+    </div>
+  </div>
+
+  <script src="js/jquery-1.8.3.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/validate.js"></script>
+  <script src="js/public-H-F.js"></script>
+  <!--<script src="js/questionsbank.js"></script>-->
+
+</body>
+
+</html>

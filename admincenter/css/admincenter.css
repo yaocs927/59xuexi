@@ -1,0 +1,1080 @@
+@charset "utf-8";
+
+/*CSS document*/
+
+
+/*placeholder 兼容*/
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #aaa;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #aaa;
+  opacity: 1
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #aaa;
+  opacity: 1
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #aaa;
+}
+
+
+/*
+=============
+管理员中心登录
+=============
+*/
+
+.adminlogin-bg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.adminlogin-bg img {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  display: block;
+}
+
+.adminlogin-bg .adminlogin {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 300px;
+  transform: translate(-50%, -50%);
+}
+
+.adminlogin-bg .adminlogin .logintitle {
+  font: 700 24px/48px Arial, "Microsoft Yahei";
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, .2);
+}
+
+.adminlogin-bg .adminlogin p input {
+  width: 300px;
+  height: 42px;
+  margin-top: 25px;
+  padding: 0 15px;
+  background: #2d2d2d;
+  background: rgba(45, 45, 45, .15);
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  border: 1px solid #3d3d3d;
+  border: 1px solid rgba(255, 255, 255, .15);
+  -moz-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .1) inset;
+  -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .1) inset;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .1) inset;
+  font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+  -o-transition: all .2s;
+  -moz-transition: all .2s;
+  -webkit-transition: all .2s;
+  -ms-transition: all .2s;
+  transition: all .2s;
+}
+
+.adminlogin-bg .adminlogin p input[type="button"] {
+  cursor: pointer;
+  width: 300px;
+  height: 44px;
+  margin-top: 25px;
+  padding: 0;
+  background: #ef4300;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  border: 1px solid #ff730e;
+  -moz-box-shadow: 0 15px 30px 0 rgba(255, 255, 255, .25) inset, 0 2px 7px 0 rgba(0, 0, 0, .2);
+  -webkit-box-shadow: 0 15px 30px 0 rgba(255, 255, 255, .25) inset, 0 2px 7px 0 rgba(0, 0, 0, .2);
+  box-shadow: 0 15px 30px 0 rgba(255, 255, 255, .25) inset, 0 2px 7px 0 rgba(0, 0, 0, .2);
+  font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+  -o-transition: all .2s;
+  -moz-transition: all .2s;
+  -webkit-transition: all .2s;
+  -ms-transition: all .2s;
+  transition: all .2s;
+}
+
+
+/*
+========
+管理员中心
+========
+*/
+
+body {
+  background-color: #f1f1f1;
+}
+
+.building {
+  font: 30px "Microsoft Yahei";
+  color: #333;
+}
+
+
+/*左侧导航*/
+
+.admincenter .side {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 230px;
+}
+
+.admincenter .side .logo {
+  height: 65px;
+  background-color: #1887e3;
+  text-align: center;
+}
+
+.admincenter .side .logo img {
+  margin-top: 14px;
+}
+
+.admincenter .side .menu {
+  background-color: #313a41;
+  overflow: auto;
+}
+
+.admincenter .side .menu .user {
+  height: 100px;
+  padding: 20px 0 40px;
+  text-align: center;
+}
+
+.admincenter .side .menu .user img {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+
+.admincenter .side .menu .user p {
+  font: 22px/40px Arial, "Microsoft Yahei";
+  color: #fff;
+}
+
+.admincenter .side .menu .nav {
+  margin-bottom: 50px;
+}
+
+.admincenter .side .menu .nav li {
+  position: relative;
+  width: 100%;
+  height: 36px;
+  background-image: url(../img/icon.png);
+  background-repeat: no-repeat;
+  background-size: 14px;
+}
+
+.admincenter .side .menu .nav li.myzy {
+  background-position: 60px 11px;
+}
+
+.admincenter .side .menu .nav li.mysc {
+  background-position: 60px -24px;
+}
+
+.admincenter .side .menu .nav li.myxx {
+  background-position: 60px -59px;
+}
+
+.admincenter .side .menu .nav li.myxxk {
+  background-position: 60px -93px;
+}
+
+.admincenter .side .menu .nav li.mydd {
+  background-position: 60px -127px;
+}
+
+.admincenter .side .menu .nav li.mylx {
+  background-position: 60px -162px;
+}
+
+.admincenter .side .menu .nav li.myct {
+  background-position: 60px -196px;
+}
+
+.admincenter .side .menu .nav li.myqjj {
+  background-position: 60px -350px;
+}
+
+.admincenter .side .menu .nav li.active {
+  background-color: #171e26;
+}
+
+.admincenter .side .menu .nav li.active:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  content: " ";
+  width: 5px;
+  height: 36px;
+  background-color: #1887e3;
+}
+
+.admincenter .side .menu .nav li:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  content: " ";
+  width: 0;
+  height: 36px;
+  background-color: #1887e3;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.admincenter .side .menu .nav li:hover:before {
+  width: 5px;
+}
+
+.admincenter .side .menu .nav li a {
+  display: inline-block;
+  width: 100%;
+  height: 36px;
+  font: 14px/36px "Microsoft Yahei";
+  color: #fff;
+  text-indent: 80px;
+}
+
+
+/*右侧主要内容通用样式*/
+
+.admincenter .main {
+  width: calc(100% - 230px);
+  min-width: 800px;
+  margin-left: 230px;
+  padding-bottom: 50px;
+  background-color: #f1f1f1;
+}
+
+.admincenter .main .heading {
+  height: 65px;
+  padding: 0 20px;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .15);
+}
+
+.admincenter .main .heading span {
+  float: left;
+  width: 14px;
+  height: 14px;
+  margin-top: 25px;
+  cursor: pointer;
+}
+
+.admincenter .main .heading i {
+  margin-left: 20px;
+  font: 700 20px/65px Arial, "Microsoft Yahei";
+  color: #1887e3;
+}
+
+.admincenter .main .heading ul {
+  float: right;
+}
+
+.admincenter .main .heading ul li {
+  position: relative;
+  float: left;
+  width: 100px;
+  background-image: url(../img/icon.png);
+  background-repeat: no-repeat;
+  background-size: 16px;
+}
+
+.admincenter .main .heading ul li.wHome {
+  background-position: 12px -274px;
+}
+
+.admincenter .main .heading ul li.wOut {
+  background-position: 12px -331px;
+}
+
+.admincenter .main .heading ul li a {
+  display: inline-block;
+  width: 100px;
+  font: 14px/65px "Microsoft Yahei";
+  color: #333;
+  text-indent: 35px;
+}
+
+.admincenter .main .heading ul li:before {
+  position: absolute;
+  bottom: 0;
+  left: 5px;
+  display: block;
+  content: " ";
+  width: 100px;
+  height: 0;
+  background-color: #1887e3;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.admincenter .main .heading ul li:hover:before {
+  height: 5px;
+}
+
+.admincenter .main .content {
+  padding: 0 20px;
+}
+
+.admincenter .main .crumbs a,
+.admincenter .main .crumbs i {
+  font: 12px/50px "宋体";
+  color: #939393;
+}
+
+.admincenter .main .crumbs i {
+  margin: 0 10px;
+}
+
+.admincenter .main .crumbs a:hover {
+  color: #1887e3;
+}
+
+.admincenter .main .type {
+  padding: 15px 15px 35px;
+  margin-bottom: 30px;
+  background-color: #fff;
+  border: 1px solid #e3e3e3;
+  border-radius: 5px;
+}
+
+.admincenter .main .type h4 {
+  font-size: 16px;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.admincenter .main .type h4 span {
+  float: right;
+}
+
+.admincenter .main .type h4 span input {
+  padding: 5px 8px;
+  background-color: #ff9000;
+  font-size: 14px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.userInfo {
+  cursor: pointer;
+}
+
+.userInfo:hover {
+  color: #1887e3;
+}
+
+
+/*分页*/
+
+.bottompage {
+  margin: 40px 0 60px;
+}
+
+.bottompage ul {
+  margin-left: 50%;
+  transform: translateX(-50%);
+  width: 320px;
+}
+
+.bottompage ul li {
+  float: left;
+  padding: 10px;
+  background-color: #e3e3e3;
+  cursor: pointer;
+}
+
+.bottompage ul li+li {
+  margin-left: 10px;
+}
+
+.bottompage ul li.active {
+  background-color: #ff9000;
+  color: #fff;
+}
+
+
+/*查询列表样式通用*/
+
+.admincenter .main .type .infolist .status {
+  margin-bottom: 10px;
+}
+
+.admincenter .main .type .infolist .status-left {
+  float: left;
+}
+
+.admincenter .main .type .infolist .status-right {
+  float: right;
+}
+
+.admincenter .main .type .infolist .status input {
+  padding: 0 15px;
+  height: 30px;
+  background-color: #e3e3e3;
+  cursor: pointer;
+}
+
+.admincenter .main .type .infolist .status input.active {
+  background-color: #ff9000;
+  color: #fff;
+}
+
+.admincenter .main .type .infolist .status input.default {
+  background-color: #1887e3;
+  color: #fff;
+}
+
+.admincenter .main .type .infolist table {
+  width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid #e3e3e3;
+}
+
+.admincenter .main .type .infolist table tr {
+  height: 36px;
+  background-color: #fff;
+  line-height: 36px;
+  font-size: 12px;
+}
+
+.admincenter .main .type .infolist table tr:nth-child(2n-1) {
+  background-color: #f9f9f9;
+}
+
+.admincenter .main .type .infolist table tr td {
+  padding: 5px;
+  border-right: 1px solid #e3e3e3;
+  border-bottom: 1px solid #e3e3e3;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.admincenter .main .type .infolist table tr .admincenter-dx {
+  position: relative;
+}
+
+.admincenter .main .type .infolist table tr .admincenter-dx input {
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  z-index: 5;
+  visibility: hidden;
+  transform: translateX(-50%);
+}
+
+.admincenter .main .type .infolist table tr .admincenter-dx label {
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  z-index: 4;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #eee;
+  border: 1px solid #aaa;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+.admincenter .main .type .infolist table tr .admincenter-dx label:after {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  content: "";
+  width: 7px;
+  height: 3px;
+  background-color: transparent;
+  border: 3px solid #ff9000;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  transform: rotate(-55deg);
+  opacity: 0;
+}
+
+.admincenter .main .type .infolist table tr .admincenter-dx label:hover:after {
+  opacity: .3;
+}
+
+.admincenter .main .type .infolist table tr .admincenter-dx input[type="checkbox"]:checked+label:after {
+  opacity: 1;
+}
+
+.admincenter .main .type .infolist table tr td.special {
+  padding: 5px 80px;
+  font: 18px/1.8 "Microsoft Yahei";
+  color: #ff9000;
+}
+
+.admincenter .main .type .infolist table tr td.yes {
+  color: limegreen;
+}
+
+.admincenter .main .type .infolist table tr td.no {
+  color: red;
+}
+
+.admincenter .main .type .infolist table tr td a {
+  margin-right: 5px;
+  color: #1887e3;
+}
+
+.admincenter .main .type .infolist table tr td a:hover {
+  color: #ff9000;
+}
+
+.admincenter .main .type .infolist table tr.title {
+  height: 36px;
+  line-height: 36px;
+  background-color: #e3e3e3;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.admincenter .main .type .infolist table tr.title th {
+  font-size: 12px;
+}
+
+.admincenter .main .type .infolist table tr.title th i {
+  font-weight: 400;
+  font-style: normal;
+  color: #777;
+}
+
+
+/*用户管理页面列表默认隐藏*/
+
+.admincenter .main .type .admin-yhgl table {
+  display: none;
+}
+
+
+/*试题管理页面*/
+
+.admincenter .main .type .info table {
+  width: 100%;
+  /*margin-bottom: 20px;*/
+}
+
+.admincenter .main .type .info table td {
+  height: 60px;
+}
+
+.admincenter .main .type .info table td i {
+  margin: 0 5px;
+  color: red;
+}
+
+.admincenter .main .type .info table td.validateinfo em {
+  margin-left: 20px;
+  color: red;
+}
+
+.admincenter .main .type .info table td.warn {
+  font-size: 14px;
+  color: red;
+}
+
+.admincenter .main .type .info table td input.type4 {
+  width: 240px;
+  height: 40px;
+  background-color: #ff9000;
+  font-size: 14px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.admincenter .main .type .info table td input.type4:hover {
+  border: 1px solid #d47903;
+}
+
+.admincenter .main .type .info table td input.type1 {
+  width: 170px;
+  height: 38px;
+  padding: 0 10px;
+  border: 1px solid #bebebe;
+}
+
+.admincenter .main .type .info table.tableinline td input.type1 {
+  width: 520px;
+}
+
+.admincenter .main .type .info table td input.type2 {
+  width: 242px;
+  height: 38px;
+  padding: 0 10px;
+  border: 1px solid #bebebe;
+  font-size: 14px;
+}
+
+.admincenter .main .type .info table td.lfont {
+  font: 16px/36px Arial, "Microsoft Yahei";
+  color: #333;
+  text-align: right;
+}
+
+.admincenter .main .type .info table td.uploadWrap {
+  position: relative;
+  width: 240px;
+  height: 36px;
+}
+
+.admincenter .main .type .info table td span.upload input {
+  position: absolute;
+  left: 181px;
+  top: 11px;
+  width: 60px;
+  height: 38px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.admincenter .main .type .info table td span.upload label {
+  position: absolute;
+  left: 181px;
+  top: 11px;
+  display: inline-block;
+  width: 60px;
+  height: 38px;
+  background-color: #1887e3;
+  line-height: 38px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  /*opacity: 0;*/
+}
+
+.admincenter .main .type .info table.tableinline td span.upload label,
+.admincenter .main .type .info table.tableinline td span.upload input {
+  left: 531px;
+}
+
+
+/*下拉*/
+
+.admincenter .main .type .info table td .selectBox {
+  position: relative;
+  width: 240px;
+  height: 36px;
+  border: 1px solid #bebebe;
+}
+
+.admincenter .main .type .info table td .selectBox .cur-selected {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 230px;
+  height: 36px;
+  padding-left: 10px;
+  font: 14px/36px "Microsoft Yahei";
+  color: #333;
+  cursor: pointer;
+}
+
+.admincenter .main .type .info table td .selectBox .cur-selected:after {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+  content: " ";
+  display: block;
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-top-color: #333;
+}
+
+.admincenter .main .type .info table td .selectBox .list {
+  position: absolute;
+  top: 36px;
+  left: -1px;
+  z-index: 50;
+  display: none;
+  width: 240px;
+  max-height: 300px;
+  overflow: auto;
+  padding-bottom: 5px;
+  border: 1px solid #bebebe;
+  background-color: #fff;
+}
+
+.admincenter .main .type .info table td .selectBox .list .droptype li {
+  padding-left: 10px;
+  height: 30px;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+.admincenter .main .type .info table td .selectBox .list .droptype li:hover {
+  color: #1887e3;
+}
+
+
+/*下拉样式二*/
+
+.admincenter .main .type .info table td .selectBox2 {
+  position: relative;
+  width: 586px;
+  height: 36px;
+  border: 1px solid #bebebe;
+}
+
+.admincenter .main .type .info table td .selectBox2 .cur-selected {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 556px;
+  height: 36px;
+  padding-left: 10px;
+  font: 14px/36px "Microsoft Yahei";
+  color: #333;
+  cursor: pointer;
+}
+
+.admincenter .main .type .info table td .selectBox2:after {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+  z-index: 50;
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-top-color: #333;
+}
+
+.admincenter .main .type .info table td .selectBox2 .list {
+  position: absolute;
+  top: 36px;
+  left: -1px;
+  z-index: 50;
+  display: none;
+  width: 576px;
+  max-height: 300px;
+  padding-right: 10px;
+  overflow: auto;
+  padding-bottom: 5px;
+  border: 1px solid #bebebe;
+  background-color: #fff;
+}
+
+.admincenter .main .type .info table td .selectBox2 .list .droptype li {
+  float: left;
+  width: 288px;
+  padding-left: 10px;
+  height: 30px;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+.admincenter .main .type .info table td .selectBox2 .list .droptype li:hover {
+  color: #1887e3;
+}
+
+.admincenter .main .type .info table td .selectBox2 .list button {
+  /*float: right;*/
+  display: block;
+  width: 60px;
+  height: 22px;
+  margin: 10px 0 0 10px;
+  background-color: #1887e3;
+  border: none;
+  line-height: 22px;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+/*站内信提醒*/
+
+.crumbs .messages {
+  float: right;
+  padding: 0 20px 0 10px;
+  height: 24px;
+  margin-top: 13px;
+  background-color: rgba(255, 144, 0, .1);
+  border: 1px solid rgba(255, 144, 0, .5);
+  border-radius: 3px;
+}
+
+.crumbs .messages a.messagelink {
+  font: 12px/24px Arial, "Microsoft Yahei";
+  color: #1887e3;
+}
+
+.crumbs .messages a.messagelink:hover {
+  text-decoration: underline;
+}
+
+.crumbs .messages a.messagelink span {
+  margin: 0 5px;
+  color: red;
+}
+
+
+/*
+=========
+弹出层
+=========
+*/
+
+.cover {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 997;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .2);
+}
+
+.cover .bg {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 998;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, .3);
+  border-radius: 5px;
+  transform: translate(-50%, -50%);
+}
+
+.cover .bg .heading {
+  min-width: 240px;
+  height: 40px;
+  padding: 0 20px;
+  background-color: #1887e3;
+  border-radius: 5px 5px 0 0;
+  font: 14px/40px Arial, "Microsoft Yahei";
+  color: #fff;
+}
+
+.cover .bg .heading span.close {
+  float: right;
+  width: 20px;
+  height: 20px;
+  margin-top: 10px;
+  background: url(../../img/cover-close-icon.png) center center no-repeat;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+
+.cover .bg .heading span.close:hover {
+  transform: rotateZ(180deg);
+}
+
+.cover .bg .content {
+  min-width: 240px;
+  max-height: 450px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 0 0 5px 5px;
+  overflow: auto;
+}
+
+.cover .messageDetail>p {
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  font-size: 16px;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.cover .messageDetail>p>span {
+  margin: 0 5px;
+  font-size: 18px;
+  color: red;
+}
+
+.cover .messageDetail table {
+  width: 350px;
+  margin-bottom: 20px;
+}
+
+.cover .userInfoDetail table {
+  width: 700px;
+}
+
+.cover .messageDetail table td {
+  height: 60px;
+  font-size: 14px;
+}
+
+.cover .messageDetail table td i {
+  margin: 0 5px;
+  color: red;
+}
+
+.cover .messageDetail table td.validateinfo em {
+  margin-left: 20px;
+  color: red;
+}
+
+.cover .messageDetail table td input[type="text"],
+.cover .messageDetail table td input[type="password"] {
+  padding: 0 10px;
+  width: 220px;
+  height: 40px;
+  border: 1px solid #c6c7c9;
+}
+
+.cover .messageDetail table td input.type4 {
+  padding: 0 10px;
+  width: 120px;
+  height: 40px;
+  background-color: #ff9000;
+  font-size: 14px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.cover .messageDetail table td input.type4:hover {
+  border: 1px solid #d47903;
+}
+
+.cover .messageDetail table td input.type1 {
+  width: 570px;
+}
+
+.cover .messageDetail table td input.type2 {
+  width: 320px;
+}
+
+.cover .messageDetail table td.lfont {
+  font: 14px/40px Arial, "Microsoft Yahei";
+  color: #333;
+  text-align: right;
+}
+
+.cover .messageDetail table td.upload {
+  position: relative;
+}
+
+.cover .messageDetail table td.upload input {
+  position: relative;
+  width: 120px;
+  height: 40px;
+  opacity: 0;
+}
+
+.cover .messageDetail table td.upload label {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  display: inline-block;
+  width: 120px;
+  height: 40px;
+  background-color: #1887e3;
+  line-height: 40px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  /*opacity: 0;*/
+}
+
+.cover .messageDetail table td textarea {
+  width: 570px;
+  height: 100px;
+  padding: 5px;
+  border: 1px solid #c6c7c9;
+  resize: none;
+}
+
+.cover .messageDetail .choosebtn {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.cover .messageDetail .choosebtn input {
+  padding: 10px 15px;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.cover .messageDetail .choosebtn input.yes {
+  margin-right: 10px;
+  background-color: #1887e3;
+}
+
+.cover .messageDetail .choosebtn input.no {
+  background-color: #989898;
+}
+
+
+/*弹出选择老师*/
+
+.cover .selectTeacher>p {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.cover .selectTeacher .choosebtn {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.cover .selectTeacher .choosebtn input {
+  height: 30px;
+  padding: 0 15px;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.cover .selectTeacher .choosebtn input.yes {
+  margin-right: 10px;
+  background-color: #ff9000;
+}
+
+.cover .selectTeacher .choosebtn input.no {
+  background-color: #989898;
+}
+
+.cover .selectTeacher textarea {
+  width: 500px;
+  height: 200px;
+  padding: 5px;
+  outline: none;
+  border: 1px solid #7d7d7d;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #606a73;
+  resize: none;
+}

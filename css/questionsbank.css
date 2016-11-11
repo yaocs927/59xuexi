@@ -1,0 +1,525 @@
+@charset "utf-8";
+/*CSS document*/
+
+
+/*
+=====================
+在线题库-综合知识点页面
+=====================
+*/
+
+.questionsbankMain {
+  padding: 40px 0 80px;
+}
+
+/*tab列表*/
+.questionsbankMain .tab-menu {
+  border-bottom: 2px solid #ff9000; 
+}
+
+.questionsbankMain .tab-menu a {
+  display: inline-block;
+  width: 50%;
+  height: 50px;
+  background-color: #ddd;
+  font: 22px/50px "Microsoft Yahei";
+  color: #fff;
+  text-align: center;
+}
+
+.questionsbankMain .tab-menu a.active {
+  background-color: #ff9000;
+}
+
+.questionsbankMain .tab-menu a.menu1 {
+  float: left;
+}
+
+.questionsbankMain .tab-menu a.menu2 {
+  float: left;
+}
+
+
+/*
+===========
+左侧列表
+===========
+*/
+
+.fixed {
+  position: fixed;
+  top: 0;
+}
+
+.questionsbankMain .left {
+  float: left;
+  width: 199px;
+  background-color: #fff;
+  border-left: 1px solid #e3e3e3;
+  border-bottom: 1px solid #e3e3e3;
+  overflow: hidden;
+}
+
+/*按钮*/
+.questionsbankMain .left .top {
+  margin: 10px;
+}
+
+.questionsbankMain .left .top span {
+  display: block;
+  width: 178px;
+  text-align: center;
+}
+
+.questionsbankMain .left .top span input {
+  cursor: pointer;
+}
+
+.questionsbankMain .left .top span.bigBtn input {
+  width: 178px;
+  height: 40px;
+  margin-bottom: 11px;
+  background-color: #1887e3;
+  font-size: 14px;
+  color: #fff;
+}
+
+.questionsbankMain .left .top span.oneBtn input {
+  width: 178px;
+  height: 24px;
+  background-color: #ff9000;
+  color: #fff;
+}
+
+.questionsbankMain .left .top span.shreeBtn {
+  display: none;
+}
+
+.questionsbankMain .left .top span.shreeBtn input {
+  width: 50px;
+  height: 24px;
+  background-color: #ddd;
+  color: #333;
+}
+
+.questionsbankMain .left .top span.shreeBtn input + input {
+  margin-left: 5px;
+}
+
+/*知识点列表*/
+.questionsbankMain .left .list {
+  height: auto;
+  max-height: 500px;
+  margin-left: 10px;
+  padding-bottom: 10px;
+  overflow: auto;
+}
+
+.questionsbankMain .left .list .knowledge {
+  width: 178px;
+}
+
+.questionsbankMain .left .list .knowledge li {
+  line-height: 2.2;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.questionsbankMain .left .list .knowledge li span {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  vertical-align: middle;
+  margin-right: 5px;
+  margin-bottom: 2px;
+  background: url(../img/knowledge-point-icon.png) left top no-repeat;
+}
+
+.questionsbankMain .left .list .knowledge li.active span {
+  background: url(../img/knowledge-point-icon.png) left bottom no-repeat;
+}
+
+.questionsbankMain .left .list .knowledge li label input {
+  display: none;
+  margin-left: -5px;
+  vertical-align: middle;
+}
+
+.questionsbankMain .left .list .knowledge li label a {
+  color: #333;
+}
+
+.questionsbankMain .left .list .knowledge li.active label a {
+  color: #ff9000;
+}
+
+
+/*
+===========
+右侧列表
+===========
+*/
+.questionsbankMain .right {
+  float: right;
+  width: 778px;
+  padding: 10px;
+  border: 1px solid #e3e3e3;
+  border-top-width: 0;
+}
+
+.questionsbankMain .right .questionstype .item {
+  border-bottom: 1px dashed #e3e3e3;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.questionsbankMain .right .questionstype .item span {
+  float: left;
+  width: 10%;
+  background-color: #e3e3e3;
+  font: 14px/28px "Microsoft Yahei";
+  color: #333;
+  text-align: center;
+}
+
+.questionsbankMain .right .questionstype .item dl {
+  float: left;
+  width: 90%;
+}
+
+.questionsbankMain .right .questionstype .item dl dd {
+  float: left;
+  min-width: 60px;
+  margin: 0 10px;
+  text-align: center;
+}
+
+.questionsbankMain .right .questionstype .item dl dd a {
+  display: inline-block;
+  min-width: 40px;
+  padding: 0 10px;
+  font: 14px/28px "Microsoft Yahei";
+  color: #333;
+}
+
+.questionsbankMain .right .questionstype .item dl dd a:hover {
+  background-color: #1887e3;
+  color: #fff;
+}
+
+.questionsbankMain .right .questionstype .item dl dd a.active {
+  background-color: #1887e3;
+  color: #fff;
+}
+
+.questionsbankMain .right .pubBox {
+  padding: 0 10px;
+  margin-bottom: 10px;
+  border: 1px solid #e3e3e3;
+}
+
+.questionsbankMain .right .toppage {
+  height: 34px;
+  font: 14px/34px "Microsoft Yahei";
+  color: #333;
+}
+
+.questionsbankMain .right .sort ul li {
+  float: left;
+  padding: 0 12px;
+  border-right: 1px solid #e3e3e3;
+  font: 14px/38px "Microsoft Yahei";
+  color: #333;
+  cursor: pointer;
+}
+
+.questionsbankMain .right .sort ul li span {
+  display: inline-block;
+  width: 9px;
+  height: 16px;
+  margin-left: 5px;
+  background: url(../img/sort-icon.png) left 6px no-repeat;
+}
+
+.questionsbankMain .right .sort ul li.first {
+  padding-left: 0;
+}
+
+.questionsbankMain .right .sort ul li.active {
+  color: #1887e3;
+}
+
+.questionsbankMain .right .sort ul li:hover {
+  color: #1887e3;
+}
+
+.questionsbankMain .right .sort ul li:hover span {
+  background: url(../img/sort-icon.png) left bottom no-repeat;
+}
+
+.questionsbankMain .right .questionslist {
+  padding-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #e3e3e3;
+}
+
+.questionsbankMain .right .questionslist:hover {
+  border-color: #1887e3;
+}
+
+.questionsbankMain .right .questionslist .content {
+  width: 756px;
+  margin-left: 10px;
+}
+
+.questionsbankMain .right .questionslist .info {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  background-color: #e3e3e3;
+}
+
+.questionsbankMain .right .questionslist .info form {
+  float: left;
+}
+
+.questionsbankMain .right .questionslist .info input {
+  width: 80px;
+  height: 28px;
+  margin-left: 10px;
+  background-color: #1887e3;
+  color: #fff;
+  cursor: pointer;
+}
+
+.questionsbankMain .right .questionslist .info input.grey {
+  background-color: #999;
+}
+
+.questionsbankMain .right .questionslist .info input:hover {
+  background-color: #ff9000;
+}
+
+/*题目评分*/
+/*.questionsbankMain .right .questionslist .info span.score {
+  margin-right: 10px;
+  float: right;
+}*/
+
+/*分页*/
+.questionsbankMain .right .bottompage {
+  margin: 40px 0 60px;
+}
+
+.questionsbankMain .right .bottompage ul {
+  margin-left: 50%;
+  transform: translateX(-50%);
+  width: 320px;
+}
+
+.questionsbankMain .right .bottompage ul li {
+  float: left; 
+  padding: 10px;
+  background-color: #e3e3e3;
+  cursor: pointer; 
+}
+
+.questionsbankMain .right .bottompage ul li + li {
+  margin-left: 10px;
+}
+
+.questionsbankMain .right .bottompage ul li.active {
+  background-color: #ff9000;
+  color: #fff;
+}
+
+/*
+=====================
+在线题库-试卷库页面
+=====================
+*/
+.testpapersbankMain .right {
+  float: none;
+  width: 978px;
+}
+
+.testpapersbankMain .right .testpaperslist table {
+  border: 1px solid #e3e3e3;
+}
+
+.testpapersbankMain .right .testpaperslist table tr {
+  height: 40px;
+  background-color: #fff;
+  line-height: 40px;
+  font-size: 14px;
+}
+
+.testpapersbankMain .right .testpaperslist table tr:nth-child(2n-1) {
+  background-color: #f5f5f5;
+}
+
+.testpapersbankMain .right .testpaperslist table tr td {
+  border-right: 1px solid #e3e3e3;
+  border-bottom: 1px solid #e3e3e3;
+  text-indent: 10px;
+}
+
+.testpapersbankMain .right .testpaperslist table tr td + td {
+  text-align: center;
+  text-indent: 0;
+}
+
+.testpapersbankMain .right .testpaperslist table tr td a {
+  color: #1887e3;
+}
+
+.testpapersbankMain .right .testpaperslist table tr td a:hover {
+  color: #ff9000;
+}
+
+.testpapersbankMain .right .testpaperslist table tr.title {
+  height: 44px;
+  line-height: 44px;
+  background-color: #d9edf7;
+}
+
+/*
+=====================
+在线题库-问题解析页面
+=====================
+*/
+.analysis .item {
+  width: 100%;
+  margin-bottom: 30px;
+  border: 1px solid #e3e3e3;
+}
+
+.analysis .item .heading {
+  height: 36px;
+  line-height: 36px;
+  padding: 0 20px;
+  background-color: #d9edf7;
+  font-size: 14px;
+}
+
+.analysis .item .heading em {
+  float: right;
+}
+
+.analysis .item .heading em a:hover {
+  color: #ff9000;
+}
+
+.analysis .item .content {
+  padding: 20px;
+}
+
+.analysis .item .content span {
+  display: inline-block;
+  width: 80px;
+  height: 28px; 
+  margin-bottom: 20px;
+  line-height: 28px;
+  background-color: #e3e3e3;
+  text-align: center;
+}
+
+.analysis .item .content p {
+  line-height: 1.5;
+}
+
+.analysis .item .content textarea {
+  display: block;
+  width: 600px;
+  height: 150px;
+  padding: 5px 10px;
+  margin-bottom: 20px;
+  overflow: auto;
+  resize: none;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.analysis .item .content input {
+  width: 80px;
+  height: 28px;
+  background-color: #1887e3;
+  color: #fff;
+  cursor: pointer;
+}
+
+.analysis .item .foot {
+  height: 46px;
+  padding: 0 20px;
+  line-height: 46px;
+  background-color: #e3e3e3;
+}
+
+.analysis .item .foot input {
+  width: 80px;
+  height: 28px;
+  background-color: #1887e3;
+  color: #fff;
+  cursor: pointer;
+}
+
+.analysis .item .foot input:hover {
+  background-color: #ff9000;
+}
+
+.analysis .item .foot .score {
+  float: right;
+}
+
+/*
+==========================
+在线题库-试卷库页面-试卷详情
+==========================
+*/
+.questionsbankMain .testpaperdetails .right {
+  float: none;
+  width: 978px;
+  border-top: 1px solid #e3e3e3;
+}
+
+.questionsbankMain .testpaperdetails .heading {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #e3e3e3;
+  text-align: center;
+}
+
+.questionsbankMain .testpaperdetails .heading h4 {
+  height: 40px;
+  font: 22px/1 Arial,"Microsoft Yahei";
+  color: #ff9000;
+}
+
+.questionsbankMain .testpaperdetails .heading ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.questionsbankMain .testpaperdetails .questiontype {
+  padding: 20px 0 10px;
+}
+
+.questionsbankMain .testpaperdetails .questiontype p.main {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
